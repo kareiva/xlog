@@ -490,6 +490,7 @@ void on_keyer_activate (GtkAction *action, gpointer user_data)
 
 	keyertext = gtk_text_view_new ();
 	gtk_container_add (GTK_CONTAINER (scrolledkeyerwindow), keyertext);
+       gtk_widget_set_size_request (scrolledkeyerwindow, -1, 100);
 	gtk_text_view_set_wrap_mode (GTK_TEXT_VIEW(keyertext), GTK_WRAP_CHAR);
 
 	gtk_entry_set_max_length (GTK_ENTRY (f1entry), 80);
