@@ -1,0 +1,1734 @@
+# translation of xlog.po to slovak
+# This file is distributed under the same license as the xlog package.
+# Copyright (C) 2005 Joop Stakenborg <pg4i@amsat.org>.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: xlog 2.0\n"
+"Report-Msgid-Bugs-To: Andy Stewart <kb1oiq@arrl.net>\n"
+"POT-Creation-Date: 2016-12-11 13:34-0500\n"
+"PO-Revision-Date: 2009-01-21 12:51+0100\n"
+"Last-Translator: Michal Karas <zoliqe@gmail.com>\n"
+"Language-Team: slovak <sk-i18n@lists.linux.sk>\n"
+"Language: sk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: src/callbacks_mainwindow_menu.c:127 src/gui_saveasdialog.c:112
+#: src/gui_saveasdialog.c:142
+#, c-format
+msgid "Log saved to %s"
+msgstr "Denník uložený do %s"
+
+#: src/callbacks_mainwindow_menu.c:195 src/callbacks_mainwindow_toolbar.c:394
+#: src/callbacks_mainwindow_toolbar.c:879 src/gui_mainwindow.c:608
+msgid "New QSO"
+msgstr "Nové QSO"
+
+#: src/callbacks_mainwindow_menu.c:203 src/gui_dialogsdialog.c:146
+#: src/gui_dialogsdialog.c:247 src/gui_gtkprintdialog.c:733
+#: src/gui_scorewindow.c:401
+msgid "Locator"
+msgstr "Lokátor"
+
+#: src/callbacks_mainwindow_menu.c:441 src/callbacks_mainwindow_menu.c:444
+#, c-format
+msgid "Could not read %s with your current locale"
+msgstr "Nemožno prečítať %s v aktuálnej lokalizácii"
+
+#: src/callbacks_mainwindow_menu.c:489
+msgid "Log sorted"
+msgstr "Denník zoradený"
+
+#: src/callbacks_mainwindow_qsoframe.c:259
+#, c-format
+msgid "shmget failed: %s"
+msgstr "shmget zlyhalo: %s"
+
+#: src/callbacks_mainwindow_qsoframe.c:266
+#, c-format
+msgid "shmat failed: %s"
+msgstr "shmat zlyhalo: %s"
+
+#: src/callbacks_mainwindow_qsoframe.c:556
+msgid "Warning, remarks line to long!!"
+msgstr "Varovanie, poznámka je príliš dlhá!!"
+
+#: src/callbacks_mainwindow_toolbar.c:91 src/remote.c:149
+msgid "Can not add QSO, log is read-only"
+msgstr "Nemožno pridať QSO, denník je iba na čítanie"
+
+#: src/callbacks_mainwindow_toolbar.c:379 src/remote.c:474
+#, c-format
+msgid "QSO %s added to %s log, log saved"
+msgstr "QSO %s pridané do denníka %s, denník uložený"
+
+#: src/callbacks_mainwindow_toolbar.c:383
+#, c-format
+msgid "QSO %s added to %s log"
+msgstr "QSO %s pridané do denníka %s"
+
+#: src/callbacks_mainwindow_toolbar.c:433
+msgid "Can not delete QSO, log is read-only"
+msgstr "Nemožno zmazať QSO, denník je iba na čítanie"
+
+#: src/callbacks_mainwindow_toolbar.c:440
+#, c-format
+msgid "QSO %s deleted, %s log renumbered"
+msgstr "QSO %s zmazané, denník %s prečíslovaný"
+
+#: src/callbacks_mainwindow_toolbar.c:667
+msgid "Can not update QSO, log is read-only"
+msgstr "Nemožno upraviť QSO, denník je iba na čítanie"
+
+#: src/callbacks_mainwindow_toolbar.c:1046
+#, c-format
+msgid "QSO %s updated in %s log, log saved"
+msgstr "QSO %s upravené v denníku %s, denník uložený"
+
+#: src/callbacks_mainwindow_toolbar.c:1055
+#, c-format
+msgid "QSO %s updated in %s log"
+msgstr "QSO %s upravené v denníku %s"
+
+#: src/callbacks_preferencesdialog.c:330
+msgid "xlog - select a radio"
+msgstr "xlog - výber rádia"
+
+#: src/callbacks_preferencesdialog.c:352
+msgid "Model"
+msgstr "Model"
+
+#: src/callbacks_preferencesdialog.c:356
+msgid "Manufacturer"
+msgstr "Výrobca"
+
+#: src/dxcc.c:475
+msgid "Unknown"
+msgstr ""
+
+#: src/dxcc.c:883
+#, c-format
+msgid "Timezone: %+1.1f"
+msgstr "Časová zóna: %+1.1f"
+
+#: src/dxcc.c:886 src/gui_preferencesdialog.c:374
+msgid "N"
+msgstr "S"
+
+#: src/dxcc.c:887 src/gui_preferencesdialog.c:375
+msgid "S"
+msgstr "J"
+
+#: src/dxcc.c:888 src/gui_preferencesdialog.c:382
+msgid "E"
+msgstr "V"
+
+#: src/dxcc.c:889 src/gui_preferencesdialog.c:383
+msgid "W"
+msgstr "Z"
+
+#: src/dxcc.c:890 src/gui_preferencesdialog.c:360
+msgid "Location"
+msgstr "Poloha"
+
+#: src/gc.c:77
+#, c-format
+msgid ""
+"\n"
+"Short Path: %03.0f deg, %.0f %s\n"
+"Long Path: %03.0f deg, %.0f %s\n"
+msgstr ""
+"\n"
+"Krátkou cestou: %03.0f stupňov, %.0f %s\n"
+"Dlhou cestou: %03.0f stupňov, %.0f %s\n"
+
+#: src/gui_aboutdialog.c:75 src/gui_aboutdialog.c:79
+msgid "logbook program for amateur radio operators"
+msgstr "staničný denník pre rádioamatérskych operátorov"
+
+#: src/gui_aboutdialog.c:76
+msgid "using cty.dat version"
+msgstr "používam cty.dat verzie"
+
+#: src/gui_awards_dxcc.c:45 src/gui_awards_dxcc.c:47
+msgid "xlog - DXCC award"
+msgstr "xlog - DXCC diplom"
+
+#: src/gui_awards_dxcc.c:46 src/gui_awards_iota.c:65
+#: src/gui_awards_locator.c:68 src/gui_awards_locator.c:520
+#: src/gui_awards_wac.c:43 src/gui_awards_was.c:43 src/gui_awards_waz.c:43
+msgid "Please enable the scoring window"
+msgstr "Prosím povoľte okno štatistík"
+
+#: src/gui_awards_iota.c:64 src/gui_awards_iota.c:68 src/gui_awards_iota.c:73
+msgid "xlog - IOTA award"
+msgstr "xlog - diplom IOTA"
+
+#: src/gui_awards_iota.c:69
+msgid ""
+"You will need to enable IOTA scoring from the \"windows and dialogs\" dialog"
+msgstr "Musíte povoliť štatistiky IOTA z nastavení \"Okná a dialógy\""
+
+#: src/gui_awards_locator.c:67 src/gui_awards_locator.c:71
+#: src/gui_awards_locator.c:76
+msgid "xlog - locator list"
+msgstr "xlog - zoznam lokátorov"
+
+#: src/gui_awards_locator.c:72 src/gui_awards_locator.c:524
+msgid ""
+"You will need to enable locator scoring from the \"windows and dialogs\" "
+"dialog"
+msgstr "Musíte povoliť štatistiky lokátorov z nastavení \"Okná a dialógy\""
+
+#: src/gui_awards_locator.c:519 src/gui_awards_locator.c:523
+#: src/gui_awards_locator.c:536
+msgid "xlog - locator map"
+msgstr "xlog - mapa lokátorov"
+
+#: src/gui_awards_locator.c:544
+msgid "Select band (MHz) for locator scoring"
+msgstr "Zvoľte pásma (MHz) pre štatistiky lokátorov"
+
+#: src/gui_awards_locator.c:574
+msgid "All"
+msgstr "Všetky"
+
+#: src/gui_awards_wac.c:42 src/gui_awards_wac.c:46 src/gui_awards_wac.c:51
+msgid "xlog - WAC award"
+msgstr "xlog - diplom WAC"
+
+#: src/gui_awards_wac.c:47
+msgid ""
+"You will need to enable WAC scoring from the \"windows and dialogs\" dialog"
+msgstr "Musíte povoliť štatistiky WAC z nastavení \"Okná a dialógy\""
+
+#: src/gui_awards_was.c:42 src/gui_awards_was.c:46 src/gui_awards_was.c:51
+msgid "xlog - WAS award"
+msgstr "xlog - diplom WAS"
+
+#: src/gui_awards_was.c:47
+msgid ""
+"You will need to enable WAS scoring from the \"windows and dialogs\" dialog"
+msgstr "Musíte povoliť štatistiky WAS z nastavení \"Okná a dialógy\""
+
+#: src/gui_awards_waz.c:42 src/gui_awards_waz.c:46 src/gui_awards_waz.c:51
+msgid "xlog - WAZ award"
+msgstr "xlog - diplom WAZ"
+
+#: src/gui_awards_waz.c:47
+msgid ""
+"You will need to enable WAZ scoring from the \"windows and dialogs\" dialog"
+msgstr "Musíte povoliť štatistiky WAZ z nastavení \"Okná a dialógy\""
+
+#: src/gui_b4window.c:165
+msgid "xlog - worked before"
+msgstr "xlog - už robené spojenia"
+
+#: src/gui_closedialog.c:58
+msgid "xlog - closing"
+msgstr "xlog - končím"
+
+#: src/gui_closedialog.c:69
+msgid "This log has not been saved, do you want to close it anyway?"
+msgstr "Tento denník nie je uložený, chcete ho určite zavrieť?"
+
+#: src/gui_countrymap.c:140
+msgid "xlog - country map"
+msgstr "xlog - mapa štátov"
+
+#: src/gui_defaultsdialog.c:51
+msgid "xlog - defaults"
+msgstr "xlog - prednastavené voľby"
+
+#: src/gui_defaultsdialog.c:60
+msgid "Values to use for 'Click all' or Ctl+k"
+msgstr "Hodnoty použité pre 'Vyplniť predvolené' alebo Ctl+k"
+
+#: src/gui_defaultsdialog.c:79 src/gui_dialogsdialog.c:116
+#: src/gui_dialogsdialog.c:214 src/gui_dupecheckdialog.c:181
+#: src/gui_gtkprintdialog.c:713 src/gui_logeditordialog.c:272
+msgid "Mode"
+msgstr "Mód"
+
+#: src/gui_defaultsdialog.c:106 src/gui_dialogsdialog.c:125
+#: src/gui_dialogsdialog.c:226 src/gui_dialogsdialog.c:434
+#: src/gui_gtkprintdialog.c:721 src/gui_logeditordialog.c:327
+#: src/gui_mainwindow.c:192
+msgid "Awards"
+msgstr "Diplomy"
+
+#: src/gui_defaultsdialog.c:115 src/gui_dialogsdialog.c:134
+#: src/gui_dialogsdialog.c:235 src/gui_gtkprintdialog.c:727
+#: src/gui_logeditordialog.c:357
+msgid "Power"
+msgstr "Výkon"
+
+#: src/gui_defaultsdialog.c:124 src/gui_gtkprintdialog.c:735
+msgid "Freefield1"
+msgstr "Ľubovolné1"
+
+#: src/gui_defaultsdialog.c:133 src/gui_gtkprintdialog.c:737
+msgid "Freefield2"
+msgstr "Ľubovolné2"
+
+#: src/gui_defaultsdialog.c:142 src/gui_dialogsdialog.c:155
+#: src/gui_dialogsdialog.c:256 src/gui_gtkprintdialog.c:739
+#: src/gui_logeditordialog.c:451
+msgid "Remarks"
+msgstr "Poznámky"
+
+#: src/gui_dialogsdialog.c:71
+msgid "xlog - dialogs and windows"
+msgstr "xlog - okná a dialógy"
+
+#: src/gui_dialogsdialog.c:81
+msgid "Columns to show in the 'Worked Before' dialog"
+msgstr "Položky zobrazované v okne 'Už robené spojenia'"
+
+#: src/gui_dialogsdialog.c:92
+msgid "Logname"
+msgstr "Názov denníka"
+
+#: src/gui_dialogsdialog.c:95 src/gui_gtkprintdialog.c:701
+#: src/gui_logeditordialog.c:181
+msgid "QSO Number"
+msgstr "Číslo QSO"
+
+#: src/gui_dialogsdialog.c:98 src/gui_dialogsdialog.c:199
+#: src/gui_gtkprintdialog.c:703 src/gui_logeditordialog.c:201
+msgid "Date"
+msgstr "Dátum"
+
+#: src/gui_dialogsdialog.c:104 src/gui_dialogsdialog.c:205
+#: src/gui_gtkprintdialog.c:707
+msgid "UTC - end"
+msgstr "UTC - koniec"
+
+#: src/gui_dialogsdialog.c:107 src/gui_dialogsdialog.c:208
+#: src/gui_gtkprintdialog.c:709 src/gui_logeditordialog.c:244
+msgid "Call"
+msgstr "Značka"
+
+#: src/gui_dialogsdialog.c:110 src/gui_dialogsdialog.c:211
+#: src/gui_gtkprintdialog.c:711
+msgid "Frequency"
+msgstr "Frekvencia"
+
+#: src/gui_dialogsdialog.c:128 src/gui_dialogsdialog.c:229
+#: src/gui_gtkprintdialog.c:723
+msgid "Qsl Out"
+msgstr "Qsl odoslaný"
+
+#: src/gui_dialogsdialog.c:131 src/gui_dialogsdialog.c:232
+#: src/gui_gtkprintdialog.c:725
+msgid "Qsl In"
+msgstr "Qsl prijatý"
+
+#: src/gui_dialogsdialog.c:140 src/gui_dialogsdialog.c:241
+#: src/gui_gtkprintdialog.c:729 src/gui_logeditordialog.c:372
+msgid "Name"
+msgstr "Meno"
+
+#: src/gui_dialogsdialog.c:162
+msgid "Options for the export dialog"
+msgstr "Predvoľby pre okno exportu"
+
+#: src/gui_dialogsdialog.c:169
+msgid "When exporting to ADIF convert frequency to band"
+msgstr "Pri exportovaní do ADIF previesť frekvencie na pásma"
+
+#: src/gui_dialogsdialog.c:178
+#, fuzzy
+msgid "When exporting to Cabrillo convert frequency to band"
+msgstr "Pri exportovaní do ADIF previesť frekvencie na pásma"
+
+#: src/gui_dialogsdialog.c:189
+msgid "Fields to export when saving as TSV (Tab Separated Value) for gLabels"
+msgstr ""
+"Polia, ktoré vyexportovať pri ukladaní do TSV (Tab Separated Value) pre "
+"gLabels"
+
+#: src/gui_dialogsdialog.c:263
+msgid ""
+"Add calculated bearing and distance fields when the locator log field is used"
+msgstr ""
+"Pridať polia vypočítaného smerovania a vzdialenosti ak je vyplnené pole "
+"lokátoru"
+
+#: src/gui_dialogsdialog.c:271
+msgid "Sort by DXCC"
+msgstr "Zoradiť podľa DXCC"
+
+#: src/gui_dialogsdialog.c:280
+msgid "Group by call-sign"
+msgstr "Zoskupiť podľa značky"
+
+#: src/gui_dialogsdialog.c:292 src/gui_preferencesdialog.c:295
+msgid "Bands"
+msgstr "Pásma"
+
+#: src/gui_dialogsdialog.c:296
+msgid "Bands to include in the scoring window"
+msgstr "Pásma pridané do okna štatistík"
+
+#: src/gui_dialogsdialog.c:438
+msgid "Awards to add to the scoring window"
+msgstr "Diplomy pridané do okna štatistík"
+
+#: src/gui_dialogsdialog.c:459 src/gui_mainwindow.c:231
+msgid "Worked Before"
+msgstr "Už robené spojenia"
+
+#: src/gui_dialogsdialog.c:462
+msgid "Export"
+msgstr "Exportovanie"
+
+#: src/gui_dialogsdialog.c:465
+msgid "Scoring"
+msgstr "Štatistiky"
+
+#: src/gui_dupecheckdialog.c:145
+msgid "xlog - dupecheck"
+msgstr "xlog - kontrola duplicitných QSO"
+
+#: src/gui_dupecheckdialog.c:154
+msgid "Select logs for dupe checking"
+msgstr "Zvoľte denníky pre kontrolu duplicitných QSO"
+
+#: src/gui_dupecheckdialog.c:163
+msgid "Check this log"
+msgstr "Skontrolovať tento denník"
+
+#: src/gui_dupecheckdialog.c:169
+msgid "Check all logs"
+msgstr "Skontrolovať všetky denníky"
+
+#: src/gui_dupecheckdialog.c:172
+msgid "Items to exclude"
+msgstr "Nebrať do úvahy"
+
+#: src/gui_dupecheckdialog.c:184
+msgid "Band"
+msgstr "Pásmo"
+
+#: src/gui_dupecheckdialog.c:229
+msgid "Searching..."
+msgstr "Vyhľadávam ..."
+
+#: src/gui_dupecheckdialog.c:260 src/gui_dupecheckdialog.c:568
+msgid "xlog - dupe results"
+msgstr "xlog - duplicitné QSO"
+
+#: src/gui_dupecheckdialog.c:274
+msgid "Select an entry to highlight the corresponding entry in the main window"
+msgstr ""
+"Kliknite na položku pre vysvietenie prislúchajúcej položky v hlavnom okne"
+
+#: src/gui_dupecheckdialog.c:363
+msgid "This window will not update when you modify QSO's"
+msgstr ""
+
+#: src/gui_dupecheckdialog.c:569
+msgid "No dupes found!"
+msgstr "Nenájdené žiadné duplicitné spojenia!"
+
+#: src/gui_dxcclist.c:68
+msgid "xlog - DXCC list"
+msgstr "xlog - zoznam DXCC"
+
+#: src/gui_dxcclist.c:90
+msgid "Nr"
+msgstr "Nr"
+
+#: src/gui_dxcclist.c:96
+msgid "Prefix"
+msgstr "Prefix"
+
+#: src/gui_dxcclist.c:101
+msgid "Country"
+msgstr "Krajina"
+
+#: src/gui_dxcclist.c:106
+msgid "Continent"
+msgstr "Kontinent"
+
+#: src/gui_dxcclist.c:121
+msgid "Latitude"
+msgstr "Zemepisná šírka"
+
+#: src/gui_dxcclist.c:127
+msgid "Longitude"
+msgstr "Zemepisná dĺžka"
+
+#: src/gui_dxcclist.c:133
+msgid "Timezone"
+msgstr "Časová zóna"
+
+#: src/gui_exportdialog.c:65
+msgid "xlog - export"
+msgstr "xlog - export"
+
+#: src/gui_exportdialog.c:74
+msgid "Type of log:"
+msgstr "Formát denníka:"
+
+#: src/gui_exportdialog.c:84
+msgid "Export QSO:"
+msgstr "Vyexportovať QSO:"
+
+#: src/gui_exportdialog.c:89 src/gui_saveasdialog.c:74
+msgid "to"
+msgstr "po"
+
+#: src/gui_exportdialog.c:142 src/gui_exportdialog.c:172
+msgid "Cannot export log: invalid entry for first and/or last QSO"
+msgstr ""
+"Nemožno vyexportovať denník: nesprávna hodnota pre prvé a/alebo posledné QSO"
+
+#: src/gui_exportdialog.c:146 src/gui_exportdialog.c:176
+#, c-format
+msgid "Log exported to %s"
+msgstr "Denník vyexportovaný do %s"
+
+#: src/gui_exportdialog.c:152
+msgid "xlog - exporting"
+msgstr "xlog - exportovanie"
+
+#: src/gui_exportdialog.c:157 src/gui_saveasdialog.c:123
+#, c-format
+msgid "%s already exist, do want to overwrite it?"
+msgstr "%s už existuje, prepísať?"
+
+#: src/gui_fontselectiondialog.c:49
+msgid "xlog - select Font"
+msgstr "xlog - výber typu písma"
+
+#: src/gui_fontselectiondialog.c:63
+msgid "How about this font?"
+msgstr "Čo tak tento typ písma?"
+
+#: src/gui_gtkprintdialog.c:644
+#, c-format
+msgid "Log \"%s\" printed on %s by %s version %s"
+msgstr "Denník \"%s\" bol vytlačený na %s cez %s verzia %s"
+
+#: src/gui_gtkprintdialog.c:922
+msgid "Columns"
+msgstr "Stĺpce"
+
+#: src/gui_importdialog.c:115
+msgid "xlog - select a log for import"
+msgstr "xlog - zvoliť denník pre import"
+
+#: src/gui_importdialog.c:192 src/gui_newlogdialog.c:131
+#: src/gui_openlogdialog.c:127
+msgid "A log with the same name is already open"
+msgstr "Denník s rovnakým menom je už otvorený"
+
+#: src/gui_importdialog.c:247 src/gui_importdialog.c:280
+#, c-format
+msgid "%d QSO's imported"
+msgstr "%d importovaných QSO"
+
+#: src/gui_importdialog.c:309
+msgid "xlog - import"
+msgstr "xlog - import"
+
+#: src/gui_importdialog.c:313
+msgid ""
+"These pages will help you import your log. Formats supported are ADIF, EDI "
+"( Electronic Data Interchange) and cabrillo, together with editest, oh1aa, "
+"tlf, trlog and twlog native logbook formats."
+msgstr ""
+"Tieto stránky Vám pomôžu naimportovať Váš denník. Podporované formáty sú "
+"ADIF, EDI (Electronic Data Interchange) a cabrillo, spolu s natívnymi "
+"formátmi programov editest, oh1aa, tlf, trlog a twlog."
+
+#: src/gui_importdialog.c:318
+msgid "Welcome"
+msgstr "Vitajte"
+
+#: src/gui_importdialog.c:326
+msgid "Step 1"
+msgstr "Krok 1"
+
+#: src/gui_importdialog.c:330
+msgid ""
+"Select a log by clicking on the \"Open\" button. The logtype can be chosen "
+"with the combobox."
+msgstr ""
+"Zvoľte denník kliknutím na tlačítko \"Otvoriť\". Druh denníka je možné "
+"zvoliť v rolovacej lište."
+
+#: src/gui_importdialog.c:361
+msgid "Step 2"
+msgstr "Krok 2"
+
+#: src/gui_importdialog.c:365
+msgid "Select the type of import"
+msgstr "Výber druhu importu "
+
+#: src/gui_importdialog.c:370
+msgid "Import as new log"
+msgstr "Importovať ako nový denník"
+
+#: src/gui_importdialog.c:376
+msgid "Import into current log"
+msgstr "Importovať do aktuálneho denníka"
+
+#: src/gui_importdialog.c:382
+msgid "Step 3"
+msgstr "Krok 3"
+
+#: src/gui_importdialog.c:386
+msgid ""
+"When importing from cabrillo add the following remark. Leave empty if you "
+"don't want to have a remark added."
+msgstr ""
+"Pri importovaní z cabrillo pridať následujúcu poznámku. Ponechajte prázdne "
+"ak nechcete vkladať žiadnú poznámku."
+
+#: src/gui_importdialog.c:400
+msgid ""
+"Clicking apply will now import your log. In case you import into an existing "
+"log, you should use xlog's sorting capabilties to sort the log. You can also "
+"use the log-editor to hide columns."
+msgstr ""
+"Kliknutím na Použiť sa naimportuje denník. V prípade importu do už "
+"existujúceho denníka, môžete využiť zoraďovacie možnosti xlogu pre zoradenie "
+"denníka. Taktiež môžete využiť editor denníka na skrytie niektorých stĺpcov."
+
+#: src/gui_importdialog.c:408
+msgid "End"
+msgstr "Koniec"
+
+#: src/gui_keys.c:80
+msgid "Key"
+msgstr "Kľúč"
+
+#: src/gui_keys.c:85
+msgid "Usage"
+msgstr "Použitie"
+
+#: src/gui_logeditordialog.c:151
+msgid "xlog - logeditor"
+msgstr "xlog - editor denníka"
+
+#: src/gui_logeditordialog.c:168 src/gui_logeditordialog.c:314
+msgid "Fieldname"
+msgstr "Názov položky"
+
+#: src/gui_logeditordialog.c:170 src/gui_logeditordialog.c:316
+msgid ""
+"Show / Hide\n"
+"-This log-"
+msgstr ""
+"Zobraziť / Skryť\n"
+"-Tento denník-"
+
+#: src/gui_logeditordialog.c:172 src/gui_logeditordialog.c:318
+msgid ""
+"Width (Pixels)\n"
+"-All logs-"
+msgstr ""
+"Šírka (bodov)\n"
+"-Všetky denníky-"
+
+#: src/gui_logeditordialog.c:183 src/gui_logeditordialog.c:203
+#: src/gui_logeditordialog.c:217 src/gui_logeditordialog.c:232
+#: src/gui_logeditordialog.c:246 src/gui_logeditordialog.c:260
+#: src/gui_logeditordialog.c:274 src/gui_logeditordialog.c:288
+#: src/gui_logeditordialog.c:302 src/gui_logeditordialog.c:331
+#: src/gui_logeditordialog.c:346 src/gui_logeditordialog.c:361
+#: src/gui_logeditordialog.c:376 src/gui_logeditordialog.c:391
+#: src/gui_logeditordialog.c:406 src/gui_logeditordialog.c:423
+#: src/gui_logeditordialog.c:440 src/gui_logeditordialog.c:455
+msgid "Show"
+msgstr "Zobraziť"
+
+#: src/gui_logeditordialog.c:228
+msgid "Endtime (UTC)"
+msgstr "Čas ukončenia (UTC)"
+
+#: src/gui_logeditordialog.c:233 src/gui_logeditordialog.c:332
+#: src/gui_logeditordialog.c:347 src/gui_logeditordialog.c:362
+#: src/gui_logeditordialog.c:377 src/gui_logeditordialog.c:392
+#: src/gui_logeditordialog.c:407 src/gui_logeditordialog.c:424
+#: src/gui_logeditordialog.c:441 src/gui_logeditordialog.c:456
+msgid "Hide"
+msgstr "Skryť"
+
+#: src/gui_logeditordialog.c:342
+msgid "QSL out/in"
+msgstr "QSL odoslaný/prijatý"
+
+#: src/gui_logeditordialog.c:402
+msgid "QTH Locator"
+msgstr "QTH Lokátor"
+
+#: src/gui_mainwindow.c:147
+msgid "Log"
+msgstr "Denníky"
+
+#: src/gui_mainwindow.c:148
+msgid "Edit"
+msgstr "Úpravy"
+
+#: src/gui_mainwindow.c:149
+msgid "Options"
+msgstr "Predvoľby"
+
+#: src/gui_mainwindow.c:150
+msgid "Tools"
+msgstr "Nástroje"
+
+#: src/gui_mainwindow.c:151
+msgid "Page"
+msgstr "Záložky"
+
+#: src/gui_mainwindow.c:152 src/gui_preferencesdialog.c:441
+msgid "Settings"
+msgstr "Nastavenia"
+
+#: src/gui_mainwindow.c:153
+msgid "Help"
+msgstr "Pomocník"
+
+#: src/gui_mainwindow.c:155
+msgid "New..."
+msgstr "Nový..."
+
+#: src/gui_mainwindow.c:156
+msgid "Open"
+msgstr "Otvoriť"
+
+#: src/gui_mainwindow.c:157
+msgid "Print"
+msgstr "Tlačiť"
+
+#: src/gui_mainwindow.c:158
+msgid "Page Setup"
+msgstr "Nastavenie strany"
+
+#: src/gui_mainwindow.c:159
+msgid "Save"
+msgstr "Uložiť"
+
+#: src/gui_mainwindow.c:160
+msgid "Save As..."
+msgstr "Uložit ako..."
+
+#: src/gui_mainwindow.c:161
+msgid "Close"
+msgstr "Zavrieť"
+
+#: src/gui_mainwindow.c:162
+msgid "Export..."
+msgstr "Exportovať..."
+
+#: src/gui_mainwindow.c:163
+msgid "Import..."
+msgstr "Importovať..."
+
+#: src/gui_mainwindow.c:164
+msgid "Merge"
+msgstr "Spojiť"
+
+#: src/gui_mainwindow.c:165
+msgid "Quit"
+msgstr "Koniec"
+
+#: src/gui_mainwindow.c:167
+msgid "Write"
+msgstr "Zapísať"
+
+#: src/gui_mainwindow.c:168
+msgid "Write a QSO to the log [Ctrl-W]"
+msgstr "Pridať nové QSO do denníka [Ctrl-W]"
+
+#: src/gui_mainwindow.c:169
+msgid "Clear All"
+msgstr "Zmazať všetko"
+
+#: src/gui_mainwindow.c:171
+msgid "Click All"
+msgstr "Vyplniť všetko predvolené"
+
+#: src/gui_mainwindow.c:173
+msgid "Write and Click All"
+msgstr "Vyplniť všetko predvolené a zapísať"
+
+#: src/gui_mainwindow.c:175
+msgid "Delete"
+msgstr "Zmazať"
+
+#: src/gui_mainwindow.c:176
+msgid "Delete a selected log entry [Ctrl-D]"
+msgstr "Zmazať označenú položku denníka [Ctrl-D]"
+
+#: src/gui_mainwindow.c:177
+msgid "Find"
+msgstr "Hľadať"
+
+#: src/gui_mainwindow.c:179
+msgid "Update"
+msgstr "Upraviť"
+
+#: src/gui_mainwindow.c:180
+msgid "Update a modified log entry [Ctrl-U]"
+msgstr "Upraviť zmenenú položku denníka [Ctrl-U]"
+
+#: src/gui_mainwindow.c:182
+msgid "Country Map"
+msgstr "Mapa krajín"
+
+#: src/gui_mainwindow.c:184 src/gui_preferencesdialog.c:415
+msgid "Keyer"
+msgstr "Kľúčovanie"
+
+#: src/gui_mainwindow.c:187
+msgid "Find unknown countries..."
+msgstr ""
+
+#: src/gui_mainwindow.c:188
+msgid "Dupe Check..."
+msgstr "Kontrola duplicitných spojení..."
+
+#: src/gui_mainwindow.c:189
+msgid "Log Editor"
+msgstr "Editor denníka"
+
+#: src/gui_mainwindow.c:190
+msgid "Trace Hamlib"
+msgstr "Trasovať Hamlib"
+
+#: src/gui_mainwindow.c:191
+msgid "Sort by Date"
+msgstr "Zoradiť denník podľa dátumu"
+
+#: src/gui_mainwindow.c:198
+msgid "Locator List"
+msgstr "Zoznam lokátorov"
+
+#: src/gui_mainwindow.c:199
+msgid "Locator Map"
+msgstr "Mapa lokátorov"
+
+#: src/gui_mainwindow.c:201
+msgid "Defaults"
+msgstr "Predvolené hodnoty"
+
+#: src/gui_mainwindow.c:202
+msgid "Dialogs and Windows"
+msgstr "Okná a dialógy"
+
+#: src/gui_mainwindow.c:203
+msgid "Preferences..."
+msgstr "Možnosti..."
+
+#: src/gui_mainwindow.c:205
+msgid "Documentation"
+msgstr "Dokumentácia"
+
+#: src/gui_mainwindow.c:206
+msgid "DXCC list"
+msgstr "Zoznam DXCC"
+
+#: src/gui_mainwindow.c:207
+msgid "Keys"
+msgstr "Kľúče"
+
+#: src/gui_mainwindow.c:208
+msgid "Manual"
+msgstr "Príručka"
+
+#: src/gui_mainwindow.c:209
+msgid "About..."
+msgstr "O programe"
+
+#: src/gui_mainwindow.c:211
+msgid "Bugs"
+msgstr "Chyby"
+
+#: src/gui_mainwindow.c:212
+msgid "Changelog"
+msgstr "Zoznam zmien"
+
+#: src/gui_mainwindow.c:213
+msgid "Todo"
+msgstr "Plán vývoja"
+
+#: src/gui_mainwindow.c:229
+msgid "Scoring Window"
+msgstr "Okno štatistiky"
+
+#: src/gui_mainwindow.c:230
+msgid "Show Toolbar"
+msgstr "Zobraziť panel nástrojov"
+
+#: src/gui_mainwindow.c:412
+msgid "_Date"
+msgstr "_Dátum"
+
+#: src/gui_mainwindow.c:430
+msgid "_End (UTC )"
+msgstr "Koni_ec (UTC)"
+
+#: src/gui_mainwindow.c:439
+msgid "_Call"
+msgstr "_Značka"
+
+#: src/gui_mainwindow.c:469 src/gui_mainwindow.c:472
+msgid "M_ode"
+msgstr "_Mód"
+
+#: src/gui_mainwindow.c:508
+msgid "_QSL out"
+msgstr "_QSL odoslaný"
+
+#: src/gui_mainwindow.c:510
+msgid "Q_SL in"
+msgstr "Q_SL prijatý"
+
+#: src/gui_mainwindow.c:515
+msgid "_Awards"
+msgstr "Di_plomy"
+
+#: src/gui_mainwindow.c:527 src/gui_mainwindow.c:530
+msgid "_Power"
+msgstr "_Výkon"
+
+#: src/gui_mainwindow.c:540
+msgid "_Name"
+msgstr "Me_no"
+
+#: src/gui_mainwindow.c:560
+msgid "_Locator"
+msgstr "_Lokátor"
+
+#: src/gui_mainwindow.c:592
+msgid "Remar_ks"
+msgstr "Poznám_ky"
+
+#: src/gui_mergedialog.c:56
+msgid "xlog - select a log"
+msgstr "xlog - otvoriť denník"
+
+#: src/gui_mergedialog.c:97
+msgid "xlog - merge logs"
+msgstr "xlog - zlúčiť denníky"
+
+#: src/gui_mergedialog.c:100
+msgid "_Merge"
+msgstr "_Zlúčiť"
+
+#: src/gui_mergedialog.c:106
+msgid "Select first log for merging"
+msgstr "Zvoľte prvý denník pre zlúčenie"
+
+#: src/gui_mergedialog.c:118
+msgid "Select second log for merging"
+msgstr "Zvoľte druhý denník pre zlúčenie"
+
+#: src/gui_mergedialog.c:174
+#, c-format
+msgid "%d QSO's merged, the log may need sorting"
+msgstr "%d QSO zlúčených, denník možno bude potrebné zoradiť"
+
+#: src/gui_netkeyer.c:157 src/gui_netkeyer.c:284
+msgid "Send to keyer has failed"
+msgstr "Odoslanie dát na kľúčovanie zlyhalo"
+
+#: src/gui_netkeyer.c:331
+msgid "xlog - keyer"
+msgstr "xlog - kľúčovanie"
+
+#: src/gui_netkeyer.c:448
+msgid "Auto exchange message in CQ mode"
+msgstr "Automaticky odosielaná správa v CQ móde"
+
+#: src/gui_netkeyer.c:450
+msgid "Auto exchange message in S&P mode"
+msgstr "Automaticky odosielaná správa v S&P móde"
+
+#: src/gui_netkeyer.c:514
+msgid "gethostbyname for keyer failed"
+msgstr "gethostbyname pre kľúčovanie zlyhalo"
+
+#: src/gui_netkeyer.c:519
+msgid "creation of socket for keyer failed"
+msgstr "Vytváranie spojenia pre kľúčovanie zlyhalo"
+
+#: src/gui_newlogdialog.c:92
+msgid "xlog - new log"
+msgstr "xlog - nový denník"
+
+#: src/gui_newlogdialog.c:100
+msgid "Enter a name for this log (a-z, A-Z, 0-9, dash(-) and underscore(_))"
+msgstr ""
+"Zadajte názov pre tento denník (a-z, A-Z, 0-9, čiarka(-) a podčiarkovník(_))"
+
+#: src/gui_newlogdialog.c:155
+msgid "A log with this name already exists"
+msgstr "Denník s takýmto menom už existuje"
+
+#: src/gui_newlogdialog.c:190 src/gui_openlogdialog.c:73
+#: src/gui_openlogdialog.c:187 src/main.c:587
+msgid "xlog - open log"
+msgstr "xlog - otvoriť denník"
+
+#: src/gui_newlogdialog.c:191 src/gui_openlogdialog.c:188 src/main.c:588
+msgid ""
+"There were some errors converting from your locale to UTF8, which is used by "
+"GTK+ internally. It is best if you start xlog from a terminal and see what "
+"the errors are. Please check your language settings and your log fields!"
+msgstr ""
+"Vyskytlo sa niekoľko problémov pri konvertovaní z použitej lokalizácie do "
+"UTF8, ktorá je použitá priamo v GTK+. Najlepšie bude, ak spustíte xlog z "
+"terminálu a pozriete čo sú to za chyby. Prosím, skontrolujte nastavenia "
+"jazyka (internacionalizácie) a položky denníka!"
+
+#: src/gui_openlogdialog.c:90
+msgid "Open log read-only"
+msgstr "Otvoriť denník iba na čítanie"
+
+#: src/gui_openlogdialog.c:176 src/main.c:414
+#, c-format
+msgid "%d QSO's loaded"
+msgstr "%d načítaných QSO"
+
+#: src/gui_pathselectiondialog.c:48
+msgid "xlog - select a directory"
+msgstr "xlog - výber priečinku"
+
+#: src/gui_preferencesdialog.c:226
+msgid "xlog - preferences"
+msgstr "xlog - možnosti"
+
+#: src/gui_preferencesdialog.c:237 src/gui_preferencesdialog.c:263
+msgid "General"
+msgstr "Vzhľad"
+
+#: src/gui_preferencesdialog.c:242
+msgid "Enable clock on statusbar"
+msgstr "Povoliť hodiny na stavovom paneli"
+
+#: src/gui_preferencesdialog.c:245
+msgid "Enable type and find"
+msgstr "Povoliť vyhľadávanie počas písania"
+
+#: src/gui_preferencesdialog.c:249
+msgid ""
+"Search all the logs for a callsign match and when found, fill in name, QTH, "
+"locator and remarks like in the previous QSO when these fields are empty"
+msgstr ""
+"Vyhľadávať vo všetkých deníkoch značku a pri zhode vyplniť meno, QTH, "
+"lokátor a poznámky z predošlého QSO, ak sú tieto položky prázdne"
+
+#: src/gui_preferencesdialog.c:253
+msgid "Use free fields (when present) to add distance and azimuth to the log"
+msgstr ""
+"Použiť \"ľubovoľné\" polia (ak sú dostupné) na vloženie vzdialenosti a "
+"azimutu do denníka"
+
+#: src/gui_preferencesdialog.c:259
+msgid "Confirm exit via dialog box"
+msgstr ""
+
+#: src/gui_preferencesdialog.c:261
+msgid " Display the \"Are you sure?\" dialog when exiting "
+msgstr ""
+
+#: src/gui_preferencesdialog.c:268
+msgid "Modes"
+msgstr "Módy"
+
+#: src/gui_preferencesdialog.c:274 src/gui_preferencesdialog.c:301
+msgid "Use Editbox"
+msgstr "Použiť editovací box"
+
+#: src/gui_preferencesdialog.c:280 src/gui_preferencesdialog.c:307
+msgid "Use Optionmenu"
+msgstr "Použiť ponuku volieb"
+
+#: src/gui_preferencesdialog.c:287
+msgid "Comma separated list of modes"
+msgstr "Čiarkami oddelený zoznam módov"
+
+#: src/gui_preferencesdialog.c:314
+msgid "Comma separated list of bands"
+msgstr "Čiarkami oddelený zoznam pásiem"
+
+#: src/gui_preferencesdialog.c:322
+msgid "Remote data"
+msgstr "Vzdialené dáta"
+
+#: src/gui_preferencesdialog.c:327
+msgid "When receiving data from another application (gmfsk, ktrack):"
+msgstr "Po prijatí dát od inej aplikácie (gmfsk, ktrack):"
+
+#: src/gui_preferencesdialog.c:335
+msgid "Add data directly to the log"
+msgstr "Vložiť dáta priamo do denníka"
+
+#: src/gui_preferencesdialog.c:341
+msgid "Add data to the QSO frame"
+msgstr "Vložiť dáta do QSO okna"
+
+#: src/gui_preferencesdialog.c:349
+msgid "Callsign"
+msgstr "Značka"
+
+#: src/gui_preferencesdialog.c:353
+msgid "Your Callsign"
+msgstr "Vaša značka"
+
+#: src/gui_preferencesdialog.c:364
+msgid "Your location (ddd.mm)"
+msgstr "Vaša poloha (sss.mm)"
+
+#: src/gui_preferencesdialog.c:386
+msgid "QTH locator"
+msgstr "QTH lokátor"
+
+#: src/gui_preferencesdialog.c:392
+msgid "Units"
+msgstr "Jednotky"
+
+#: src/gui_preferencesdialog.c:396
+msgid "Display distance in"
+msgstr "Zobrazovať vzdialenosť v"
+
+#: src/gui_preferencesdialog.c:400
+msgid "Kilometers"
+msgstr "Kilometroch"
+
+#: src/gui_preferencesdialog.c:401
+msgid "Miles"
+msgstr "Míľach"
+
+#: src/gui_preferencesdialog.c:402
+msgid "Lookup"
+msgstr "Vyhľadať"
+
+#: src/gui_preferencesdialog.c:407
+msgid ""
+"When clicking the \"?\" next to the callsign you can use your internet "
+"browser to look it up. \"<call>\" in the lookup-URL will be replaced by the "
+"callsign"
+msgstr ""
+"Kliknutím na \"?\" napravo od značky ju môžete vyhľadať pomocou "
+"internetového prehliadača. Reťazec \"<call>\" vo vyhladávacej URL bude "
+"nahradený značkou"
+
+#: src/gui_preferencesdialog.c:420
+msgid "Initial exchange to use for \"~\" (see the manual for details)"
+msgstr "Počiatočný kód použitý pre \"~\" (pre podrobnosti pozrite príručku)"
+
+#: src/gui_preferencesdialog.c:427
+msgid "Info"
+msgstr "Informácie"
+
+#: src/gui_preferencesdialog.c:437
+msgid "Enable hamlib support"
+msgstr "Povoliť podporu hamlib"
+
+#: src/gui_preferencesdialog.c:451
+msgid "_Select a Radio"
+msgstr "_Typ rádia"
+
+#: src/gui_preferencesdialog.c:458
+msgid "Attach to Device"
+msgstr "Pripojené k portu"
+
+#: src/gui_preferencesdialog.c:501
+msgid "Comma separated list of commands for configuring your hamlib port"
+msgstr "Čiarkami oddelený zoznam príkazov pre nastavenie hamlib portu"
+
+#: src/gui_preferencesdialog.c:509
+msgid "example: rts_state=ON,timeout=600,serial_speed=19200"
+msgstr "príklad: rts_state=ON,timeout=600,serial_speed=19200"
+
+#: src/gui_preferencesdialog.c:516
+msgid "Use FCC emission designators for modes (e.g. A1A, J3E, etc.)"
+msgstr "Použiť FCC označenie vysielania pre módy (napr. A1A, J3E, atď.)"
+
+#: src/gui_preferencesdialog.c:525
+msgid "Enable polling"
+msgstr "Povoliť pravidelnú komunikáciu"
+
+#: src/gui_preferencesdialog.c:533
+msgid "Poll rig every"
+msgstr "Komunikovať so zariadením každých"
+
+#: src/gui_preferencesdialog.c:552
+msgid "milliseconds"
+msgstr "milisekúnd"
+
+#: src/gui_preferencesdialog.c:556
+msgid "Show S-meter on statusbar"
+msgstr "Zobraziť S-meter na stavovom paneli"
+
+#: src/gui_preferencesdialog.c:560
+msgid "Show frequency on statusbar"
+msgstr "Zobraziť frekvenciu na stavovom paneli"
+
+#: src/gui_preferencesdialog.c:569
+msgid "Round frequency at digit"
+msgstr "Zaokrúhliť frekvenciu na desatiny"
+
+#: src/gui_preferencesdialog.c:596
+msgid "Changing settings in the Logs section of this page requires a restart!"
+msgstr ""
+"Zmena nastavení na tejto záložke v časti Denníky vyžaduje reštart aplikácie!"
+
+#: src/gui_preferencesdialog.c:599 src/gui_preferencesdialog.c:736
+msgid "Logs"
+msgstr "Denníky"
+
+#: src/gui_preferencesdialog.c:603
+msgid "Directory where the logs will be saved"
+msgstr "Priečinok, do ktorého sa budú ukladať denníky"
+
+#: src/gui_preferencesdialog.c:615 src/gui_preferencesdialog.c:716
+msgid "Click here to change the path"
+msgstr "Zmeniť cestu"
+
+#: src/gui_preferencesdialog.c:621
+msgid "Comma separated list of logs to load at startup"
+msgstr "Čiarkami oddelený zoznam denníkov pre načítavanie pri štarte"
+
+#: src/gui_preferencesdialog.c:635
+msgid "Load logs by"
+msgstr "Načítať denníky podľa"
+
+#: src/gui_preferencesdialog.c:640
+msgid "Time of last modification"
+msgstr "Čas poslednej zmeny"
+
+#: src/gui_preferencesdialog.c:641
+msgid "Alphabet"
+msgstr "Alfabetické"
+
+#: src/gui_preferencesdialog.c:647
+msgid "Saving"
+msgstr "Ukladanie"
+
+#: src/gui_preferencesdialog.c:652
+msgid "Save with every log change"
+msgstr "Ukladať s každou zmenou denníka"
+
+#: src/gui_preferencesdialog.c:658
+msgid "Enable autosave"
+msgstr "Povoliť automatické ukladanie"
+
+#: src/gui_preferencesdialog.c:667
+msgid "Autosave logs every"
+msgstr "Automaticky ukladať denníky každých"
+
+#: src/gui_preferencesdialog.c:686
+msgid "minutes"
+msgstr "minút"
+
+#: src/gui_preferencesdialog.c:689
+msgid "Backup"
+msgstr "Záloha"
+
+#: src/gui_preferencesdialog.c:695
+msgid "Use standard backup procedure"
+msgstr "Použiť bežný postup zálohovania"
+
+#: src/gui_preferencesdialog.c:701
+msgid "Copy logs to a safe location"
+msgstr "Kopírovať denníky na bezpečné miesto"
+
+#: src/gui_preferencesdialog.c:718
+msgid "Font"
+msgstr "Písmo"
+
+#: src/gui_preferencesdialog.c:722
+msgid "Font to use for the log"
+msgstr "Písmo použité pre denník"
+
+#: src/gui_saveasdialog.c:60
+msgid "xlog - save as"
+msgstr "xlog - uložiť ako"
+
+#: src/gui_saveasdialog.c:69
+msgid "Save QSO:"
+msgstr "Uložiť QSO:"
+
+#: src/gui_saveasdialog.c:108 src/gui_saveasdialog.c:138
+msgid "Cannot save log: invalid entry for first and/or last QSO"
+msgstr "Nemožno uložiť denník: nesprávna hodnota pre prvé a/alebo posledné QSO"
+
+#: src/gui_saveasdialog.c:118 src/gui_savedialog.c:42
+msgid "xlog - saving"
+msgstr "xlog - ukladanie"
+
+#: src/gui_savedialog.c:53
+msgid "One of your logs has not been saved, do you want to quit anyway?"
+msgstr "Jeden z denníkov nie je uložený, skončiť aj tak?"
+
+#: src/gui_savedialog.c:75
+#, fuzzy
+msgid "xlog - exiting"
+msgstr "xlog - exportovanie"
+
+#: src/gui_savedialog.c:86
+msgid "Are you sure you want to exit xlog?"
+msgstr ""
+
+#: src/gui_scorewindow.c:381
+msgid "xlog - scoring"
+msgstr "xlog - štatistiky"
+
+#: src/gui_searchdialog.c:190
+msgid "xlog - searchresult"
+msgstr "xlog - výsledok hľadania"
+
+#: src/gui_searchdialog.c:193
+#, c-format
+msgid "'%s' was not found"
+msgstr "'%s' nebol nájdený"
+
+#: src/gui_searchdialog.c:240
+msgid "xlog - search"
+msgstr "xlog - hľadať"
+
+#: src/gui_searchdialog.c:254
+msgid "Search this log"
+msgstr "Prehľadať tento denník"
+
+#: src/gui_searchdialog.c:259
+msgid "Search all logs"
+msgstr "Prehľadať všetky denníky"
+
+#: src/gui_searchdialog.c:269
+msgid "Search callsign field"
+msgstr "Prehľadať pole značky"
+
+#: src/gui_searchdialog.c:274
+msgid "Search all fields"
+msgstr "Prehľadať všetky polia"
+
+#: src/gui_setupdialog.c:45
+msgid "xlog - setup"
+msgstr "xlog - nastavenia"
+
+#: src/gui_setupdialog.c:55
+#, fuzzy, c-format
+msgid ""
+"Xlog has created %s, this is the directory where your log will be saved. You "
+"can change the default path for your logs in the preferences dialog.\n"
+"\n"
+"Now select Log -> New from the menu to create a log.\n"
+"\n"
+"Before you start logging, you should read the handbook by selecting Help -> "
+"Manual from the menu!"
+msgstr ""
+"Xlog vytvoril %s. Do tohoto priečinku sa budú ukladať denníky. Túto cestu "
+"možno zmeniť v nastaveniach."
+
+#: src/gui_tracedialog.c:143
+msgid "Please enable hamlib from the Preferences -> Settings dialog"
+msgstr "Prosím zapnite podporu hamlib v okne Možnosti -> Nastavenia"
+
+#: src/gui_tracedialog.c:150
+msgid "xlog - trace hamlib"
+msgstr "xlog - trasovanie hamlib"
+
+#: src/gui_tracedialog.c:177
+#, c-format
+msgid "Saving to %s"
+msgstr "Ukladanie do %s"
+
+#: src/hamlib-utils.c:167
+#, c-format
+msgid "Hamlib config parameter error: %s"
+msgstr "Chyba parametra konfigurácie hamlib: %s"
+
+#: src/hamlib-utils.c:176
+#, c-format
+msgid "An error occured while opening port %s: %s"
+msgstr "Nastala chyba počas otvárania portu %s: %s"
+
+#: src/hamlib-utils.c:285
+#, c-format
+msgid "Hamlib error %d: %s"
+msgstr "Chyba hamlib %d: %s"
+
+#: src/hamlib-utils.c:293
+msgid ""
+"There was an error while communicating with your rig, hamlib has stopped"
+msgstr ""
+"Počas komunikácie so zariadením sa vyskytol problém, hamlib bol zastavený"
+
+#: src/log.c:73
+#, c-format
+msgid "Backup to %s failed: %s"
+msgstr "Zálohovanie do %s zlyhalo: %s"
+
+#: src/log.c:131 src/log.c:171 src/log.c:188 src/log.c:208 src/log.c:225
+#: src/log.c:242 src/utils.c:518
+#, c-format
+msgid "Unable to convert '%s' to UTF-8: %s"
+msgstr "Nemožno konvertovať '%s'  do UTF-8: %s"
+
+#: src/log.c:266
+msgid "Reading..."
+msgstr "Načítavanie..."
+
+#: src/log.c:486
+#, c-format
+msgid "fork failed when saving log: %s"
+msgstr ""
+
+#: src/main.c:99
+#, c-format
+msgid "%s version %s\n"
+msgstr "%s verzia %s\n"
+
+#: src/main.c:121
+#, c-format
+msgid "Creating ~%s directory."
+msgstr "Vytváranie priečinku ~%s."
+
+#: src/main.c:126
+#, c-format
+msgid "~%s is not a directory."
+msgstr "~%s nie je priečinok."
+
+#: src/main.c:236
+msgid "xlog - startup"
+msgstr "xlog - štart"
+
+#: src/main.c:237
+msgid "xlog needs at least version 2.12 of the GTK+ libraries"
+msgstr "xlog vyžaduje GTK+ knižnice verzie najmenej 2.12"
+
+#: src/main.c:268
+msgid "Could not read dxcc table"
+msgstr "Nemožno načítať zoznam dxcc"
+
+#: src/main.c:271
+msgid "Could not read area table"
+msgstr "Nemožno načítať zoznam oblastí"
+
+#: src/main.c:384
+#, c-format
+msgid "Can not open log \"%s\""
+msgstr "Nemožno otvoriť denník \"%s\""
+
+#: src/main.c:452
+#, c-format
+msgid "Msgget failed: %s"
+msgstr "Msgget zlyhalo: %s"
+
+#: src/main.c:463
+#, c-format
+msgid "Socket setup failed: %s"
+msgstr "Nastavenie portu zlyhalo: %s"
+
+#: src/main.c:595 src/remote.c:138
+msgid "xlog - error"
+msgstr "xlog - chyba"
+
+#: src/main.c:596
+msgid ""
+"There was an error while loading one of your logs, you may want to start "
+"xlog from a terminal to see what the errors are."
+msgstr ""
+"Vyskytla sa chyba pri načítavaní jedného z denníkov, možno by ste mali "
+"spustiť xlog z terminálu a sledovať o aké chyby sa jedná."
+
+#: src/netkeyer.c:77
+msgid "closing of socket failed"
+msgstr "Uzavretie spojenia zlyhalo"
+
+#: src/remote.c:139
+msgid "No log open while receiving remote data"
+msgstr "Počas prijatia vzdialených dát nebol otvorený žiaden denník"
+
+#: src/remote.c:478
+#, c-format
+msgid "Remote data received from %s (#%d), QSO %s added"
+msgstr "Prijaté vzdialené dáta od %s (#%d), QSO %s pridané"
+
+#: src/remote.c:569
+#, c-format
+msgid "Remote data received from %s (#%d)"
+msgstr "Prijaté vzdialené dáta od %s (#%d)"
+
+#: src/remote.c:572
+msgid "Warning: No hamlib support for remote data"
+msgstr "Varovanie: chýba podpora hamlib pre vzdialené dáta"
+
+#: src/remote.c:630
+msgid "Unable to accept new connection"
+msgstr "Nepodarilo sa akceptovať nové spojenie"
+
+#: src/support.c:48
+#, c-format
+msgid "Widget not found: %s"
+msgstr "Widget nenájdený: %s"
+
+#: src/support.c:94 src/support.c:117
+#, c-format
+msgid "Couldn't find pixmap file: %s"
+msgstr "Nemožno nájsť obrázok: %s"
+
+#: src/support.c:124
+#, c-format
+msgid "Failed to load pixbuf file: %s: %s\n"
+msgstr "Nepodarilo sa načítať obrázok zo súboru: %s: %s\n"
+
+#: src/utils.c:317
+msgid "Ready."
+msgstr "Pripravený."
+
+#: src/utils.c:629
+msgid "Log(s) autosaved"
+msgstr "Denník(y) automaticky uložené"
+
+#: src/logfile/flog.c:79 src/logfile/flog.c:86
+#, c-format
+msgid "The header of log %s is corrupted."
+msgstr "Hlavička denníka %s je poškodená."
+
+#: src/logfile/flog.c:80
+msgid "It's length is smaller than 80."
+msgstr "Jej dĺžka je menšia ako 80."
+
+#: src/logfile/flog.c:81 src/logfile/flog.c:88
+msgid "This does not look like an xlog file."
+msgstr "Toto nevyzerá ako súbor xlog-u."
+
+#: src/logfile/flog.c:87
+msgid "It does not start with DATE."
+msgstr "Nezačína položkou DATE."
+
+#~ msgid "Add"
+#~ msgstr "Pridať"
+
+#, fuzzy
+#~ msgid "xlog - IOTA awards"
+#~ msgstr "xlog - tlač"
+
+#, fuzzy
+#~ msgid "xlog - WAC awards"
+#~ msgstr "xlog - tlač"
+
+#, fuzzy
+#~ msgid "xlog - WAS awards"
+#~ msgstr "xlog - tlač"
+
+#, fuzzy
+#~ msgid "xlog - WAZ awards"
+#~ msgstr "xlog - tlač"
+
+#~ msgid "Distance: %d km, azimuth: %d deg"
+#~ msgstr "Vzdialenosť: %d km, azimut: %d stupňov"
+
+#~ msgid "Distance: %d m, azimuth: %d deg"
+#~ msgstr "Vzdialenosť: %d m, azimut: %d stupňov"
+
+#~ msgid "empty preferences file"
+#~ msgstr "súbor nastavení je prázdny"
+
+#~ msgid "document of the wrong type, root node is not xlog"
+#~ msgstr "Nesprávny typ dokumentu, koreňový uzol nie je z xlogu"
+
+#, fuzzy
+#~ msgid "_Import"
+#~ msgstr "Tlačiť QSO"
+
+#~ msgid "characters"
+#~ msgstr "znakov"
+
+#~ msgid ""
+#~ "Select or enter a callsign (or part of a callsign) to search for in the "
+#~ "log"
+#~ msgstr ""
+#~ "Vyber alebo napíš značku (alebo časť značky) pre vyhľadávanie v denníku"
+
+#~ msgid "Keep this dialog open"
+#~ msgstr "Ponechať toto okno otvorené"
+
+#~ msgid "No columns selected, printing cancelled..."
+#~ msgstr "Nie sú zvolené žiadné riadky, tlačenie zrušené..."
+
+#~ msgid "portrait"
+#~ msgstr "na výšku"
+
+#~ msgid "Cannot get printer configuration, aborting..."
+#~ msgstr "Nemožno získať nastavenia tlačiarne, prerušujem..."
+
+#~ msgid "Error while getting print environment"
+#~ msgstr "Chyba pri zisťovaní informácii o tlači"
+
+#~ msgid "Printing to %s%slog.ps"
+#~ msgstr "Tlačím do %s%slog.ps"
+
+#~ msgid "Printing log in the background"
+#~ msgstr "Tlač denníka na pozadí"
+
+#, fuzzy
+#~ msgid "%s: %1.2f%s %1.2f%s"
+#~ msgstr "Poloha: %+1.2f %+1.2f"
+
+#, fuzzy
+#~ msgid "Location: %1.2fN %1.2fE"
+#~ msgstr "Poloha: %+1.2f %+1.2f"
+
+#, fuzzy
+#~ msgid "Location: %1.2fS %1.2fW"
+#~ msgstr "Poloha: %+1.2f %+1.2f"
+
+#, fuzzy
+#~ msgid "Location: %1.2fS %1.2fE"
+#~ msgstr "Poloha: %+1.2f %+1.2f"
+
+#~ msgid "xlog - print"
+#~ msgstr "xlog - tlač"
+
+#~ msgid "Range"
+#~ msgstr "Rozsah"
+
+#~ msgid "Print all QSO's"
+#~ msgstr "Vytlačiť všetky QSO"
+
+#~ msgid "Print QSO"
+#~ msgstr "Tlačiť QSO"
+
+#~ msgid "To"
+#~ msgstr "až"
+
+#~ msgid "Destination"
+#~ msgstr "Cieľ"
+
+#~ msgid "File"
+#~ msgstr "Súbor"
+
+#~ msgid "Paper"
+#~ msgstr "Papier"
+
+#~ msgid "Papersize"
+#~ msgstr "Veľkosť papiera"
+
+#~ msgid "Pointsize"
+#~ msgstr "Veľkosť písma"
+
+#~ msgid "Orientation"
+#~ msgstr "Orientácia"
+
+#~ msgid "landscape"
+#~ msgstr "na šírku"
+
+#~ msgid "Contests"
+#~ msgstr "Preteky"
+
+#~ msgid "Add empty Multiplier and Points columns"
+#~ msgstr "Vložiť prázdne stĺpce pre Násobiče a Body"
+
+#~ msgid "Latitude Out of Range (90N to 90S)"
+#~ msgstr "Šírka mimo rozsah (90S až 90J)"
+
+#~ msgid "Longitude Out of Range (180W to 180E)"
+#~ msgstr "Dĺžka mimo rozsah (180Z až 180V)"
+
+#~ msgid "Minutes Out of Range (0 to 59)"
+#~ msgstr "Minúty mimo rozsah (0 až 59)"
+
+#~ msgid "Faq"
+#~ msgstr "Často kladené otázky"
+
+#~ msgid "Thanks"
+#~ msgstr "Poďakovanie"
+
+#~ msgid "%s: not a valid locator"
+#~ msgstr "%s: nesprávny lokátor"
+
+#~ msgid "FAQ"
+#~ msgstr "FAQ"
+
+#~ msgid "MANUAL"
+#~ msgstr "MANUAL"
+
+#~ msgid "Dialogs"
+#~ msgstr "Okná"
+
+#, fuzzy
+#~ msgid "Exceptions"
+#~ msgstr "Predv_oľby"
+
+#~ msgid "Clock"
+#~ msgstr "Hodiny"
+
+#~ msgid "Other"
+#~ msgstr "Rôzne"
+
+#~ msgid "_Log"
+#~ msgstr "_Denník"
+
+#~ msgid "_Settings"
+#~ msgstr "Na_stavenia"
+
+#~ msgid "Creating a new preferences file...\n"
+#~ msgstr "Vytváram nový súbor s nastaveniami ...\n"
+
+#~ msgid "preferences not parsed successfully"
+#~ msgstr "nastavenia neboli úspešne načítané"
+
+#~ msgid "xlog - about"
+#~ msgstr "xlog - o programe"
+
+#~ msgid "Published under the GNU GPL License"
+#~ msgstr "Publikované pod GNU GPL Licenciou"
+
+#~ msgid "xlog - select color"
+#~ msgstr "xlog - výber farby"
+
+#~ msgid "Save As"
+#~ msgstr "Uložit ako..."
+
+#~ msgid "Theme"
+#~ msgstr "Vzhľad"
+
+#~ msgid "Theme color"
+#~ msgstr "Farba vzhľadu"
+
+#~ msgid "Example"
+#~ msgstr "Ukážka"
+
+#~ msgid "Colored label"
+#~ msgstr "Farebný popisok"
+
+#~ msgid "Theme font"
+#~ msgstr "Písmo vzhľadu"
+
+#~ msgid "Apply theme to the log (restart xlog if you change this)"
+#~ msgstr "Použiť vzhľad pre denník (po zmenení treba reštartovať xlog)"
+
+#~ msgid "Click here to change the theme color"
+#~ msgstr "Zmeniť farbu vzhľadu"
+
+#~ msgid "Modes/Bands"
+#~ msgstr "Módy/Pásma"
+
+#~ msgid "Allocation of color failed in setlabelstyle"
+#~ msgstr "Chyba pri alokácii farby v setlabelstyle"
+
+#~ msgid "Allocation of color failed in setframestyle"
+#~ msgstr "Chyba pri alokácii farby v setframestyle"
+
+#~ msgid "Hamlib error: get_rigid failed"
+#~ msgstr "Chyba hamlib: get_rigid zlyhalo"
+
+#~ msgid "Creation of logfile failed"
+#~ msgstr "Vytváranie súboru denníka zlyhalo"
+
+#~ msgid "%d QSO's and %d countries loaded"
+#~ msgstr "načítaných %d QSO a %d štátov"

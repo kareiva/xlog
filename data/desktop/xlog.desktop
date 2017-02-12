@@ -1,0 +1,12 @@
+[Desktop Entry]
+Name=Xlog
+Comment=Amateur Radio logging program
+Comment[nl]=Log programma voor zendamateurs
+Comment[pl]=Dziennik łączności dla radioamatorów
+TryExec=xlog
+Exec=xlog %F
+Icon=xlog-icon.png
+Terminal=false
+Type=Application
+Categories=Utility;Database;HamRadio;GTK
+MimeType=text/x-xlog

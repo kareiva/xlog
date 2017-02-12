@@ -1,0 +1,1739 @@
+# translatison of xlog.pot to Portuguese
+# xlog - GTK+ logging program for amateur radio operators
+# Copyright (C) 2001-2005 Joop Stakenborg <pg4i@amsat.org>
+# David Quental <ct1drb@iol.pt>, 2003, 2004, 2005.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: xlog-1.0\n"
+"Report-Msgid-Bugs-To: Andy Stewart <kb1oiq@arrl.net>\n"
+"POT-Creation-Date: 2016-12-11 13:34-0500\n"
+"PO-Revision-Date: 2006-01-19 15:45+0100\n"
+"Last-Translator: David Quental <ct1drb@iol.pt>\n"
+"Language-Team: Spanish <kde-es@kybs.de>\n"
+"Language: pt\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.9.1\n"
+
+#: src/callbacks_mainwindow_menu.c:127 src/gui_saveasdialog.c:112
+#: src/gui_saveasdialog.c:142
+#, c-format
+msgid "Log saved to %s"
+msgstr "Log guardado como %s"
+
+#: src/callbacks_mainwindow_menu.c:195 src/callbacks_mainwindow_toolbar.c:394
+#: src/callbacks_mainwindow_toolbar.c:879 src/gui_mainwindow.c:608
+msgid "New QSO"
+msgstr "Novo QSO"
+
+#: src/callbacks_mainwindow_menu.c:203 src/gui_dialogsdialog.c:146
+#: src/gui_dialogsdialog.c:247 src/gui_gtkprintdialog.c:733
+#: src/gui_scorewindow.c:401
+msgid "Locator"
+msgstr "Locator"
+
+#: src/callbacks_mainwindow_menu.c:441 src/callbacks_mainwindow_menu.c:444
+#, c-format
+msgid "Could not read %s with your current locale"
+msgstr "Não pode ler %s com o seu locale actual"
+
+#: src/callbacks_mainwindow_menu.c:489
+msgid "Log sorted"
+msgstr "Log ordenado"
+
+#: src/callbacks_mainwindow_qsoframe.c:259
+#, c-format
+msgid "shmget failed: %s"
+msgstr "Falhou shmget: %s"
+
+#: src/callbacks_mainwindow_qsoframe.c:266
+#, c-format
+msgid "shmat failed: %s"
+msgstr "Falhou shmat: %s"
+
+#: src/callbacks_mainwindow_qsoframe.c:556
+msgid "Warning, remarks line to long!!"
+msgstr "¡¡Aviso. A linha de comentários é demasiado grande!!"
+
+#: src/callbacks_mainwindow_toolbar.c:91 src/remote.c:149
+msgid "Can not add QSO, log is read-only"
+msgstr "Não posso adicionar o QSO, o log está em read-only"
+
+#: src/callbacks_mainwindow_toolbar.c:379 src/remote.c:474
+#, c-format
+msgid "QSO %s added to %s log, log saved"
+msgstr "QSO %s adicionado ao log %s, log guardado"
+
+#: src/callbacks_mainwindow_toolbar.c:383
+#, c-format
+msgid "QSO %s added to %s log"
+msgstr "QSO %s acrescentado ao log %s"
+
+#: src/callbacks_mainwindow_toolbar.c:433
+msgid "Can not delete QSO, log is read-only"
+msgstr "Não posso apagar o QSO, o log está em read-only"
+
+#: src/callbacks_mainwindow_toolbar.c:440
+#, c-format
+msgid "QSO %s deleted, %s log renumbered"
+msgstr "QSO %s eliminado, %s log renumerado"
+
+#: src/callbacks_mainwindow_toolbar.c:667
+msgid "Can not update QSO, log is read-only"
+msgstr "Não posso actualizar o QSO, o log está em read-only"
+
+#: src/callbacks_mainwindow_toolbar.c:1046
+#, c-format
+msgid "QSO %s updated in %s log, log saved"
+msgstr "QSO %s actualizado no log %s, log guardado"
+
+#: src/callbacks_mainwindow_toolbar.c:1055
+#, c-format
+msgid "QSO %s updated in %s log"
+msgstr "QSO %s actualizado no log %s"
+
+#: src/callbacks_preferencesdialog.c:330
+msgid "xlog - select a radio"
+msgstr "xlog - Seleccione um rádio"
+
+#: src/callbacks_preferencesdialog.c:352
+msgid "Model"
+msgstr "Modelo"
+
+#: src/callbacks_preferencesdialog.c:356
+msgid "Manufacturer"
+msgstr "Fabricante"
+
+#: src/dxcc.c:475
+msgid "Unknown"
+msgstr ""
+
+#: src/dxcc.c:883
+#, c-format
+msgid "Timezone: %+1.1f"
+msgstr "Zona horária: %+1.1f"
+
+#: src/dxcc.c:886 src/gui_preferencesdialog.c:374
+msgid "N"
+msgstr "N"
+
+#: src/dxcc.c:887 src/gui_preferencesdialog.c:375
+msgid "S"
+msgstr "S"
+
+#: src/dxcc.c:888 src/gui_preferencesdialog.c:382
+msgid "E"
+msgstr "E"
+
+#: src/dxcc.c:889 src/gui_preferencesdialog.c:383
+msgid "W"
+msgstr "O"
+
+#: src/dxcc.c:890 src/gui_preferencesdialog.c:360
+msgid "Location"
+msgstr "Localização"
+
+#: src/gc.c:77
+#, c-format
+msgid ""
+"\n"
+"Short Path: %03.0f deg, %.0f %s\n"
+"Long Path: %03.0f deg, %.0f %s\n"
+msgstr ""
+"\n"
+"Caminho curto: %03.0f graus, %.0f %s\n"
+"Caminho grande: %03.0f graus, %.0f %s\n"
+
+#: src/gui_aboutdialog.c:75 src/gui_aboutdialog.c:79
+msgid "logbook program for amateur radio operators"
+msgstr "programa de log para radioamadores"
+
+#: src/gui_aboutdialog.c:76
+msgid "using cty.dat version"
+msgstr "a usar a versão do cty.dat"
+
+#: src/gui_awards_dxcc.c:45 src/gui_awards_dxcc.c:47
+msgid "xlog - DXCC award"
+msgstr "xLog - diploma DXCC"
+
+#: src/gui_awards_dxcc.c:46 src/gui_awards_iota.c:65
+#: src/gui_awards_locator.c:68 src/gui_awards_locator.c:520
+#: src/gui_awards_wac.c:43 src/gui_awards_was.c:43 src/gui_awards_waz.c:43
+msgid "Please enable the scoring window"
+msgstr "Por favor active para a janela da pontuação"
+
+#: src/gui_awards_iota.c:64 src/gui_awards_iota.c:68 src/gui_awards_iota.c:73
+msgid "xlog - IOTA award"
+msgstr "xLog - diploma IOTA"
+
+#: src/gui_awards_iota.c:69
+msgid ""
+"You will need to enable IOTA scoring from the \"windows and dialogs\" dialog"
+msgstr ""
+"Você precisa de activar o IOTA desde o diálogo de \"janelas e diálogos\" "
+
+#: src/gui_awards_locator.c:67 src/gui_awards_locator.c:71
+#: src/gui_awards_locator.c:76
+msgid "xlog - locator list"
+msgstr "xLog - Lista de locators"
+
+#: src/gui_awards_locator.c:72 src/gui_awards_locator.c:524
+msgid ""
+"You will need to enable locator scoring from the \"windows and dialogs\" "
+"dialog"
+msgstr ""
+"Você precisa de activar o WAC desde o diálogo de \"janelas e diálogos\" "
+
+#: src/gui_awards_locator.c:519 src/gui_awards_locator.c:523
+#: src/gui_awards_locator.c:536
+msgid "xlog - locator map"
+msgstr "xLog - mapa de locators"
+
+#: src/gui_awards_locator.c:544
+msgid "Select band (MHz) for locator scoring"
+msgstr "Selecione a banda (MHz) para contagem de locator"
+
+#: src/gui_awards_locator.c:574
+msgid "All"
+msgstr "Todas"
+
+#: src/gui_awards_wac.c:42 src/gui_awards_wac.c:46 src/gui_awards_wac.c:51
+msgid "xlog - WAC award"
+msgstr "xLog - Diploma WAC"
+
+#: src/gui_awards_wac.c:47
+msgid ""
+"You will need to enable WAC scoring from the \"windows and dialogs\" dialog"
+msgstr ""
+"Você precisa de activar o WAC desde o diálogo de \"janelas e diálogos\" "
+
+#: src/gui_awards_was.c:42 src/gui_awards_was.c:46 src/gui_awards_was.c:51
+msgid "xlog - WAS award"
+msgstr "xLog - Diploma WAS"
+
+#: src/gui_awards_was.c:47
+msgid ""
+"You will need to enable WAS scoring from the \"windows and dialogs\" dialog"
+msgstr ""
+"Você precisa de activar o WAS desde o diálogo de \"janelas e diálogos\" "
+
+#: src/gui_awards_waz.c:42 src/gui_awards_waz.c:46 src/gui_awards_waz.c:51
+msgid "xlog - WAZ award"
+msgstr "xLog - Diploma WAZ"
+
+#: src/gui_awards_waz.c:47
+msgid ""
+"You will need to enable WAZ scoring from the \"windows and dialogs\" dialog"
+msgstr ""
+"Você precisa de activar o WAZ desde o diálogo de \"janelas e diálogos\" "
+
+#: src/gui_b4window.c:165
+msgid "xlog - worked before"
+msgstr "xLog - já trabalhado"
+
+#: src/gui_closedialog.c:58
+msgid "xlog - closing"
+msgstr "xLog - a fechar"
+
+#: src/gui_closedialog.c:69
+msgid "This log has not been saved, do you want to close it anyway?"
+msgstr "Este log não foi guardado, quer fechar de todas as formas?"
+
+#: src/gui_countrymap.c:140
+msgid "xlog - country map"
+msgstr "xLog - mapa de países"
+
+#: src/gui_defaultsdialog.c:51
+msgid "xlog - defaults"
+msgstr "xLog - valores por defeito"
+
+#: src/gui_defaultsdialog.c:60
+msgid "Values to use for 'Click all' or Ctl+k"
+msgstr "Valores a usar com 'Carregar todos\" ou Ctrl+k"
+
+#: src/gui_defaultsdialog.c:79 src/gui_dialogsdialog.c:116
+#: src/gui_dialogsdialog.c:214 src/gui_dupecheckdialog.c:181
+#: src/gui_gtkprintdialog.c:713 src/gui_logeditordialog.c:272
+msgid "Mode"
+msgstr "Modo"
+
+#: src/gui_defaultsdialog.c:106 src/gui_dialogsdialog.c:125
+#: src/gui_dialogsdialog.c:226 src/gui_dialogsdialog.c:434
+#: src/gui_gtkprintdialog.c:721 src/gui_logeditordialog.c:327
+#: src/gui_mainwindow.c:192
+msgid "Awards"
+msgstr "Diplomas"
+
+#: src/gui_defaultsdialog.c:115 src/gui_dialogsdialog.c:134
+#: src/gui_dialogsdialog.c:235 src/gui_gtkprintdialog.c:727
+#: src/gui_logeditordialog.c:357
+msgid "Power"
+msgstr "Potência"
+
+#: src/gui_defaultsdialog.c:124 src/gui_gtkprintdialog.c:735
+msgid "Freefield1"
+msgstr "CampoLivre1"
+
+#: src/gui_defaultsdialog.c:133 src/gui_gtkprintdialog.c:737
+msgid "Freefield2"
+msgstr "CampoLivre2"
+
+#: src/gui_defaultsdialog.c:142 src/gui_dialogsdialog.c:155
+#: src/gui_dialogsdialog.c:256 src/gui_gtkprintdialog.c:739
+#: src/gui_logeditordialog.c:451
+msgid "Remarks"
+msgstr "Comentários"
+
+#: src/gui_dialogsdialog.c:71
+msgid "xlog - dialogs and windows"
+msgstr "xLog - diálogos e janelas"
+
+#: src/gui_dialogsdialog.c:81
+msgid "Columns to show in the 'Worked Before' dialog"
+msgstr "Colunas a mostrar no diálogo 'Já trabalhado'"
+
+#: src/gui_dialogsdialog.c:92
+msgid "Logname"
+msgstr "Nome de log"
+
+#: src/gui_dialogsdialog.c:95 src/gui_gtkprintdialog.c:701
+#: src/gui_logeditordialog.c:181
+msgid "QSO Number"
+msgstr "Número do QSO"
+
+#: src/gui_dialogsdialog.c:98 src/gui_dialogsdialog.c:199
+#: src/gui_gtkprintdialog.c:703 src/gui_logeditordialog.c:201
+msgid "Date"
+msgstr "Data"
+
+#: src/gui_dialogsdialog.c:104 src/gui_dialogsdialog.c:205
+#: src/gui_gtkprintdialog.c:707
+msgid "UTC - end"
+msgstr "GMT - fim"
+
+#: src/gui_dialogsdialog.c:107 src/gui_dialogsdialog.c:208
+#: src/gui_gtkprintdialog.c:709 src/gui_logeditordialog.c:244
+msgid "Call"
+msgstr "Indicativo"
+
+#: src/gui_dialogsdialog.c:110 src/gui_dialogsdialog.c:211
+#: src/gui_gtkprintdialog.c:711
+msgid "Frequency"
+msgstr "Frequência"
+
+#: src/gui_dialogsdialog.c:128 src/gui_dialogsdialog.c:229
+#: src/gui_gtkprintdialog.c:723
+msgid "Qsl Out"
+msgstr "QSL enviada"
+
+#: src/gui_dialogsdialog.c:131 src/gui_dialogsdialog.c:232
+#: src/gui_gtkprintdialog.c:725
+msgid "Qsl In"
+msgstr "QSL recebida"
+
+#: src/gui_dialogsdialog.c:140 src/gui_dialogsdialog.c:241
+#: src/gui_gtkprintdialog.c:729 src/gui_logeditordialog.c:372
+msgid "Name"
+msgstr "Nome"
+
+#: src/gui_dialogsdialog.c:162
+msgid "Options for the export dialog"
+msgstr "Opcões de exportacão para o menú de exportação"
+
+#: src/gui_dialogsdialog.c:169
+msgid "When exporting to ADIF convert frequency to band"
+msgstr "Quando se exporta a ADIF, converter frequência a banda"
+
+#: src/gui_dialogsdialog.c:178
+#, fuzzy
+msgid "When exporting to Cabrillo convert frequency to band"
+msgstr "Quando se exporta a ADIF, converter frequência a banda"
+
+#: src/gui_dialogsdialog.c:189
+msgid "Fields to export when saving as TSV (Tab Separated Value) for gLabels"
+msgstr ""
+"Campos a exportar quando se guarda como TSV (Tab Separared value) para "
+"glabels"
+
+#: src/gui_dialogsdialog.c:263
+msgid ""
+"Add calculated bearing and distance fields when the locator log field is used"
+msgstr "Acrescentar campos de ângulo e distância quando se usa o campo locator"
+
+#
+#: src/gui_dialogsdialog.c:271
+msgid "Sort by DXCC"
+msgstr "Ordenar por data"
+
+#: src/gui_dialogsdialog.c:280
+msgid "Group by call-sign"
+msgstr "Grupo pelo indicativo"
+
+#: src/gui_dialogsdialog.c:292 src/gui_preferencesdialog.c:295
+msgid "Bands"
+msgstr "Bandas"
+
+#: src/gui_dialogsdialog.c:296
+msgid "Bands to include in the scoring window"
+msgstr "Bandas para incluir na janela de scoring"
+
+#: src/gui_dialogsdialog.c:438
+msgid "Awards to add to the scoring window"
+msgstr "Diplomas para acrescentar na janela de scoring"
+
+#: src/gui_dialogsdialog.c:459 src/gui_mainwindow.c:231
+msgid "Worked Before"
+msgstr "Já trabalhado"
+
+#: src/gui_dialogsdialog.c:462
+msgid "Export"
+msgstr "Exportar"
+
+#: src/gui_dialogsdialog.c:465
+msgid "Scoring"
+msgstr "Guardando"
+
+#: src/gui_dupecheckdialog.c:145
+msgid "xlog - dupecheck"
+msgstr "xLog - comprovação de duplicados"
+
+#: src/gui_dupecheckdialog.c:154
+msgid "Select logs for dupe checking"
+msgstr "Seleccione os logs para revisar duplicados"
+
+#: src/gui_dupecheckdialog.c:163
+msgid "Check this log"
+msgstr "Revisar este log"
+
+#: src/gui_dupecheckdialog.c:169
+msgid "Check all logs"
+msgstr "Revisar todos os logs"
+
+#: src/gui_dupecheckdialog.c:172
+msgid "Items to exclude"
+msgstr "Elementos a excluir"
+
+#: src/gui_dupecheckdialog.c:184
+msgid "Band"
+msgstr "Banda"
+
+#: src/gui_dupecheckdialog.c:229
+msgid "Searching..."
+msgstr "Buscando ..."
+
+#: src/gui_dupecheckdialog.c:260 src/gui_dupecheckdialog.c:568
+msgid "xlog - dupe results"
+msgstr "xLog - resultado de duplicados"
+
+#: src/gui_dupecheckdialog.c:274
+msgid "Select an entry to highlight the corresponding entry in the main window"
+msgstr ""
+"Seleccione uma entrada para realçar a entrada correspondente na janela "
+"principal"
+
+#: src/gui_dupecheckdialog.c:363
+msgid "This window will not update when you modify QSO's"
+msgstr ""
+
+#: src/gui_dupecheckdialog.c:569
+msgid "No dupes found!"
+msgstr "Não se encontraram duplicados!"
+
+#: src/gui_dxcclist.c:68
+msgid "xlog - DXCC list"
+msgstr "xLog - lista DXCC"
+
+#: src/gui_dxcclist.c:90
+msgid "Nr"
+msgstr "Nº"
+
+#: src/gui_dxcclist.c:96
+msgid "Prefix"
+msgstr "Prefixo"
+
+#: src/gui_dxcclist.c:101
+msgid "Country"
+msgstr "País"
+
+#: src/gui_dxcclist.c:106
+msgid "Continent"
+msgstr "Continente"
+
+#: src/gui_dxcclist.c:121
+msgid "Latitude"
+msgstr "Latitude"
+
+#: src/gui_dxcclist.c:127
+msgid "Longitude"
+msgstr "Longitude"
+
+#: src/gui_dxcclist.c:133
+msgid "Timezone"
+msgstr "Zona horária: %+1.1f"
+
+#: src/gui_exportdialog.c:65
+msgid "xlog - export"
+msgstr "xlog - exportar"
+
+#: src/gui_exportdialog.c:74
+msgid "Type of log:"
+msgstr "Tipo de log:"
+
+#: src/gui_exportdialog.c:84
+msgid "Export QSO:"
+msgstr "Exportar QSO:"
+
+#: src/gui_exportdialog.c:89 src/gui_saveasdialog.c:74
+msgid "to"
+msgstr "a"
+
+#: src/gui_exportdialog.c:142 src/gui_exportdialog.c:172
+msgid "Cannot export log: invalid entry for first and/or last QSO"
+msgstr ""
+"Não pode exportar o log: entrada não válida para o primeiro e/ou o último QSO"
+
+#: src/gui_exportdialog.c:146 src/gui_exportdialog.c:176
+#, c-format
+msgid "Log exported to %s"
+msgstr "Log exportado como %s"
+
+#: src/gui_exportdialog.c:152
+msgid "xlog - exporting"
+msgstr "xLog - exportando"
+
+#: src/gui_exportdialog.c:157 src/gui_saveasdialog.c:123
+#, c-format
+msgid "%s already exist, do want to overwrite it?"
+msgstr "%s já existe, quer escrever por cima?"
+
+#: src/gui_fontselectiondialog.c:49
+msgid "xlog - select Font"
+msgstr "xLog - Seleccione tipo de letra"
+
+#: src/gui_fontselectiondialog.c:63
+msgid "How about this font?"
+msgstr "É este tipo de letra?"
+
+#: src/gui_gtkprintdialog.c:644
+#, c-format
+msgid "Log \"%s\" printed on %s by %s version %s"
+msgstr "Log %s imprimido em %s por %s versão %s"
+
+#: src/gui_gtkprintdialog.c:922
+msgid "Columns"
+msgstr "Colunas"
+
+#: src/gui_importdialog.c:115
+msgid "xlog - select a log for import"
+msgstr "xLog - Seleccione um log para importar"
+
+#: src/gui_importdialog.c:192 src/gui_newlogdialog.c:131
+#: src/gui_openlogdialog.c:127
+msgid "A log with the same name is already open"
+msgstr "Já há um log aberto com o mesmo nome"
+
+#: src/gui_importdialog.c:247 src/gui_importdialog.c:280
+#, c-format
+msgid "%d QSO's imported"
+msgstr "%d QSO's importados"
+
+#: src/gui_importdialog.c:309
+msgid "xlog - import"
+msgstr "xLog - importar"
+
+#: src/gui_importdialog.c:313
+msgid ""
+"These pages will help you import your log. Formats supported are ADIF, EDI "
+"( Electronic Data Interchange) and cabrillo, together with editest, oh1aa, "
+"tlf, trlog and twlog native logbook formats."
+msgstr ""
+"Estas páginas ajudarão você a importar o seu log. Os formatos suportados são "
+"o ADIF, EDI (Electronic Data Interchange) e o cabrillo, junto com os formato "
+"de log editest, oh1aa, tlf, trlog e twlog."
+
+#: src/gui_importdialog.c:318
+msgid "Welcome"
+msgstr "Benvindo"
+
+#: src/gui_importdialog.c:326
+msgid "Step 1"
+msgstr "Passo 1"
+
+#: src/gui_importdialog.c:330
+msgid ""
+"Select a log by clicking on the \"Open\" button. The logtype can be chosen "
+"with the combobox."
+msgstr ""
+"Selecione um log clicando no botão de \"Abrir\". O tipo de log pode ser "
+"escolhido na janela de opções."
+
+#: src/gui_importdialog.c:361
+msgid "Step 2"
+msgstr "Passo 2"
+
+#: src/gui_importdialog.c:365
+msgid "Select the type of import"
+msgstr "Seleccione o log e o tipo de log a importar"
+
+#: src/gui_importdialog.c:370
+msgid "Import as new log"
+msgstr "Importar como um novo log"
+
+#: src/gui_importdialog.c:376
+msgid "Import into current log"
+msgstr "Importar para o log actual"
+
+#: src/gui_importdialog.c:382
+msgid "Step 3"
+msgstr "Passo 3"
+
+#: src/gui_importdialog.c:386
+msgid ""
+"When importing from cabrillo add the following remark. Leave empty if you "
+"don't want to have a remark added."
+msgstr "Quando importar desde o cabrilho acrescentar a seguinte anotação"
+
+#: src/gui_importdialog.c:400
+msgid ""
+"Clicking apply will now import your log. In case you import into an existing "
+"log, you should use xlog's sorting capabilties to sort the log. You can also "
+"use the log-editor to hide columns."
+msgstr ""
+"Clicando na opção importará o seu log. No caso de importar para um log "
+"existente, você deve usar as capacidades de ordenação do xlog. Você também "
+"pode usar um editor de log para esconder colunas."
+
+#: src/gui_importdialog.c:408
+msgid "End"
+msgstr "Fim"
+
+#: src/gui_keys.c:80
+msgid "Key"
+msgstr "Chave de cw"
+
+#: src/gui_keys.c:85
+msgid "Usage"
+msgstr "Uso"
+
+#: src/gui_logeditordialog.c:151
+msgid "xlog - logeditor"
+msgstr "xLog - Editor de log"
+
+#: src/gui_logeditordialog.c:168 src/gui_logeditordialog.c:314
+msgid "Fieldname"
+msgstr "NomeDoCampo"
+
+#
+#: src/gui_logeditordialog.c:170 src/gui_logeditordialog.c:316
+msgid ""
+"Show / Hide\n"
+"-This log-"
+msgstr ""
+"Mostrar / Ocultar\n"
+"-Este log-"
+
+#: src/gui_logeditordialog.c:172 src/gui_logeditordialog.c:318
+msgid ""
+"Width (Pixels)\n"
+"-All logs-"
+msgstr ""
+"Largura (pixels)\n"
+"-Todos os logs-"
+
+#: src/gui_logeditordialog.c:183 src/gui_logeditordialog.c:203
+#: src/gui_logeditordialog.c:217 src/gui_logeditordialog.c:232
+#: src/gui_logeditordialog.c:246 src/gui_logeditordialog.c:260
+#: src/gui_logeditordialog.c:274 src/gui_logeditordialog.c:288
+#: src/gui_logeditordialog.c:302 src/gui_logeditordialog.c:331
+#: src/gui_logeditordialog.c:346 src/gui_logeditordialog.c:361
+#: src/gui_logeditordialog.c:376 src/gui_logeditordialog.c:391
+#: src/gui_logeditordialog.c:406 src/gui_logeditordialog.c:423
+#: src/gui_logeditordialog.c:440 src/gui_logeditordialog.c:455
+msgid "Show"
+msgstr "Mostrar"
+
+#: src/gui_logeditordialog.c:228
+msgid "Endtime (UTC)"
+msgstr "Fim (GMT)"
+
+#: src/gui_logeditordialog.c:233 src/gui_logeditordialog.c:332
+#: src/gui_logeditordialog.c:347 src/gui_logeditordialog.c:362
+#: src/gui_logeditordialog.c:377 src/gui_logeditordialog.c:392
+#: src/gui_logeditordialog.c:407 src/gui_logeditordialog.c:424
+#: src/gui_logeditordialog.c:441 src/gui_logeditordialog.c:456
+msgid "Hide"
+msgstr "Ocultar"
+
+#: src/gui_logeditordialog.c:342
+msgid "QSL out/in"
+msgstr "QSL env/rec"
+
+#: src/gui_logeditordialog.c:402
+msgid "QTH Locator"
+msgstr "QTH Locator"
+
+#: src/gui_mainwindow.c:147
+msgid "Log"
+msgstr "Log"
+
+#: src/gui_mainwindow.c:148
+msgid "Edit"
+msgstr "Editar"
+
+#: src/gui_mainwindow.c:149
+msgid "Options"
+msgstr "Opções"
+
+#: src/gui_mainwindow.c:150
+msgid "Tools"
+msgstr "Ferramentas"
+
+#: src/gui_mainwindow.c:151
+msgid "Page"
+msgstr "Página"
+
+#: src/gui_mainwindow.c:152 src/gui_preferencesdialog.c:441
+msgid "Settings"
+msgstr "Configuração"
+
+#: src/gui_mainwindow.c:153
+msgid "Help"
+msgstr "Ajuda"
+
+#: src/gui_mainwindow.c:155
+msgid "New..."
+msgstr "Novo..."
+
+#: src/gui_mainwindow.c:156
+msgid "Open"
+msgstr "Abrir"
+
+#: src/gui_mainwindow.c:157
+msgid "Print"
+msgstr "Imprimir"
+
+#: src/gui_mainwindow.c:158
+msgid "Page Setup"
+msgstr "Definir página"
+
+#: src/gui_mainwindow.c:159
+msgid "Save"
+msgstr "Guardar"
+
+#: src/gui_mainwindow.c:160
+msgid "Save As..."
+msgstr "Guardar como..."
+
+#: src/gui_mainwindow.c:161
+msgid "Close"
+msgstr "Fechar"
+
+#: src/gui_mainwindow.c:162
+msgid "Export..."
+msgstr "Exportar..."
+
+#: src/gui_mainwindow.c:163
+msgid "Import..."
+msgstr "Importar..."
+
+#: src/gui_mainwindow.c:164
+msgid "Merge"
+msgstr "Misturar"
+
+#: src/gui_mainwindow.c:165
+msgid "Quit"
+msgstr "Sair"
+
+#: src/gui_mainwindow.c:167
+msgid "Write"
+msgstr "Acrescentar"
+
+#: src/gui_mainwindow.c:168
+msgid "Write a QSO to the log [Ctrl-W]"
+msgstr "Acrescentar um novo QSO ao log [Ctrl-A]"
+
+#
+#: src/gui_mainwindow.c:169
+msgid "Clear All"
+msgstr "Limpar tudo"
+
+#
+#: src/gui_mainwindow.c:171
+msgid "Click All"
+msgstr "Carregar tudo"
+
+#
+#: src/gui_mainwindow.c:173
+msgid "Write and Click All"
+msgstr "Escrever e carregar tudo"
+
+#: src/gui_mainwindow.c:175
+msgid "Delete"
+msgstr "Eliminar"
+
+#: src/gui_mainwindow.c:176
+msgid "Delete a selected log entry [Ctrl-D]"
+msgstr "Eliminar a entrada seleccionada do log [Ctrl-D]"
+
+#: src/gui_mainwindow.c:177
+msgid "Find"
+msgstr "Procurar"
+
+#: src/gui_mainwindow.c:179
+msgid "Update"
+msgstr "Actualizar"
+
+#: src/gui_mainwindow.c:180
+msgid "Update a modified log entry [Ctrl-U]"
+msgstr "Actualizar uma entrada modificada do log [Ctrl-U]"
+
+#: src/gui_mainwindow.c:182
+msgid "Country Map"
+msgstr "Mapa dos países"
+
+#: src/gui_mainwindow.c:184 src/gui_preferencesdialog.c:415
+msgid "Keyer"
+msgstr "Chave de cw"
+
+#: src/gui_mainwindow.c:187
+msgid "Find unknown countries..."
+msgstr ""
+
+#: src/gui_mainwindow.c:188
+msgid "Dupe Check..."
+msgstr "Comprovação de duplicados..."
+
+#: src/gui_mainwindow.c:189
+msgid "Log Editor"
+msgstr "Editor de log"
+
+#: src/gui_mainwindow.c:190
+msgid "Trace Hamlib"
+msgstr "Trace ao hamlib"
+
+#
+#: src/gui_mainwindow.c:191
+msgid "Sort by Date"
+msgstr "Ordenar por data"
+
+#: src/gui_mainwindow.c:198
+msgid "Locator List"
+msgstr "Lista de locators"
+
+#: src/gui_mainwindow.c:199
+msgid "Locator Map"
+msgstr "Mapa de locators"
+
+#: src/gui_mainwindow.c:201
+msgid "Defaults"
+msgstr "Pré defenidos"
+
+#: src/gui_mainwindow.c:202
+msgid "Dialogs and Windows"
+msgstr "Diálogos e janelas"
+
+#: src/gui_mainwindow.c:203
+msgid "Preferences..."
+msgstr "Preferências..."
+
+#: src/gui_mainwindow.c:205
+msgid "Documentation"
+msgstr "Documentação"
+
+#: src/gui_mainwindow.c:206
+msgid "DXCC list"
+msgstr "Lista do DXCC"
+
+#: src/gui_mainwindow.c:207
+msgid "Keys"
+msgstr "Chave de cw"
+
+#: src/gui_mainwindow.c:208
+msgid "Manual"
+msgstr "Manual"
+
+#
+#: src/gui_mainwindow.c:209
+msgid "About..."
+msgstr "Acerca de..."
+
+#: src/gui_mainwindow.c:211
+msgid "Bugs"
+msgstr "Erros"
+
+#: src/gui_mainwindow.c:212
+msgid "Changelog"
+msgstr "Mudanças"
+
+#: src/gui_mainwindow.c:213
+msgid "Todo"
+msgstr "Por fazer"
+
+#: src/gui_mainwindow.c:229
+msgid "Scoring Window"
+msgstr "Janela de score"
+
+#
+#: src/gui_mainwindow.c:230
+msgid "Show Toolbar"
+msgstr "Mostrar barra de ferramentas"
+
+#: src/gui_mainwindow.c:412
+msgid "_Date"
+msgstr "Data"
+
+#: src/gui_mainwindow.c:430
+msgid "_End (UTC )"
+msgstr "Fim (GMT)"
+
+#: src/gui_mainwindow.c:439
+msgid "_Call"
+msgstr "_Indicativo"
+
+#: src/gui_mainwindow.c:469 src/gui_mainwindow.c:472
+msgid "M_ode"
+msgstr "M_odo"
+
+#: src/gui_mainwindow.c:508
+msgid "_QSL out"
+msgstr "_QSL env"
+
+#: src/gui_mainwindow.c:510
+msgid "Q_SL in"
+msgstr "Q_SL rec"
+
+#: src/gui_mainwindow.c:515
+msgid "_Awards"
+msgstr "_Diplomas"
+
+#: src/gui_mainwindow.c:527 src/gui_mainwindow.c:530
+msgid "_Power"
+msgstr "_Potência"
+
+#: src/gui_mainwindow.c:540
+msgid "_Name"
+msgstr "_Nome"
+
+#: src/gui_mainwindow.c:560
+msgid "_Locator"
+msgstr "_Locator"
+
+#: src/gui_mainwindow.c:592
+msgid "Remar_ks"
+msgstr "Comen_tários"
+
+#: src/gui_mergedialog.c:56
+msgid "xlog - select a log"
+msgstr "xLog - seleccione um log"
+
+#: src/gui_mergedialog.c:97
+msgid "xlog - merge logs"
+msgstr "xLog - misturar logs"
+
+#: src/gui_mergedialog.c:100
+msgid "_Merge"
+msgstr "_Misturar"
+
+#: src/gui_mergedialog.c:106
+msgid "Select first log for merging"
+msgstr "Seleccione o primeiro log a misturar"
+
+#: src/gui_mergedialog.c:118
+msgid "Select second log for merging"
+msgstr "Seleccione o segundo log a misturar"
+
+#: src/gui_mergedialog.c:174
+#, c-format
+msgid "%d QSO's merged, the log may need sorting"
+msgstr "%d QSO mmisturados, o log pode necessitar de ser ordenado"
+
+#: src/gui_netkeyer.c:157 src/gui_netkeyer.c:284
+msgid "Send to keyer has failed"
+msgstr "Envio ao manipulador falhado"
+
+#: src/gui_netkeyer.c:331
+msgid "xlog - keyer"
+msgstr "xLog - manipulador"
+
+#: src/gui_netkeyer.c:448
+msgid "Auto exchange message in CQ mode"
+msgstr "Mensagem de intercâmbio automático em modo CQ"
+
+#: src/gui_netkeyer.c:450
+msgid "Auto exchange message in S&P mode"
+msgstr "Mensagem de intercâmbio automático em modo S&P"
+
+#: src/gui_netkeyer.c:514
+msgid "gethostbyname for keyer failed"
+msgstr "falha do gethostbyname para o manipulador"
+
+#: src/gui_netkeyer.c:519
+msgid "creation of socket for keyer failed"
+msgstr "Falha da criação do socket para o manipulador"
+
+#: src/gui_newlogdialog.c:92
+msgid "xlog - new log"
+msgstr "xLog - Novo log"
+
+#: src/gui_newlogdialog.c:100
+msgid "Enter a name for this log (a-z, A-Z, 0-9, dash(-) and underscore(_))"
+msgstr "Introduza um nome para este log (a-z, A-Z, 0-9,  (-) e (_))"
+
+#: src/gui_newlogdialog.c:155
+msgid "A log with this name already exists"
+msgstr "Já existe um log com o mesmo nome"
+
+#: src/gui_newlogdialog.c:190 src/gui_openlogdialog.c:73
+#: src/gui_openlogdialog.c:187 src/main.c:587
+msgid "xlog - open log"
+msgstr "xLog - Open log"
+
+#: src/gui_newlogdialog.c:191 src/gui_openlogdialog.c:188 src/main.c:588
+msgid ""
+"There were some errors converting from your locale to UTF8, which is used by "
+"GTK+ internally. It is best if you start xlog from a terminal and see what "
+"the errors are. Please check your language settings and your log fields!"
+msgstr ""
+"Há alguns erros ao converter do seu locale a UTF8 que é o que usa o GTK+ "
+"internamente. O melhor é que arranque xLog desde um terminal e veja que "
+"erros existem. Por favor comprove a configuração de idioma e os campos do "
+"log!"
+
+#: src/gui_openlogdialog.c:90
+msgid "Open log read-only"
+msgstr "Abrir o log em read-only"
+
+#: src/gui_openlogdialog.c:176 src/main.c:414
+#, c-format
+msgid "%d QSO's loaded"
+msgstr "%d QSO's carregados"
+
+#: src/gui_pathselectiondialog.c:48
+msgid "xlog - select a directory"
+msgstr "xLog - Seleccione uma directoria"
+
+#: src/gui_preferencesdialog.c:226
+msgid "xlog - preferences"
+msgstr "xLog - Preferências"
+
+#: src/gui_preferencesdialog.c:237 src/gui_preferencesdialog.c:263
+msgid "General"
+msgstr "Geral"
+
+#: src/gui_preferencesdialog.c:242
+msgid "Enable clock on statusbar"
+msgstr "Habilitar o relógio na barra de estado"
+
+#: src/gui_preferencesdialog.c:245
+msgid "Enable type and find"
+msgstr "Habilitar teclar e procurar"
+
+#: src/gui_preferencesdialog.c:249
+msgid ""
+"Search all the logs for a callsign match and when found, fill in name, QTH, "
+"locator and remarks like in the previous QSO when these fields are empty"
+msgstr ""
+"Procurar em todos os logs um indicativo que coincida e quando se encontre, "
+"preencher o nome, QTH, locator e comentários igual que no QSO anterior "
+"quando estes campos estejam vazios"
+
+#: src/gui_preferencesdialog.c:253
+msgid "Use free fields (when present) to add distance and azimuth to the log"
+msgstr ""
+"Use os campos livres (quando presentes) para adicionar distância e azimute "
+"para o log"
+
+#: src/gui_preferencesdialog.c:259
+msgid "Confirm exit via dialog box"
+msgstr ""
+
+#: src/gui_preferencesdialog.c:261
+msgid " Display the \"Are you sure?\" dialog when exiting "
+msgstr ""
+
+#: src/gui_preferencesdialog.c:268
+msgid "Modes"
+msgstr "Modos"
+
+#: src/gui_preferencesdialog.c:274 src/gui_preferencesdialog.c:301
+msgid "Use Editbox"
+msgstr "Usar caixa de edição"
+
+#: src/gui_preferencesdialog.c:280 src/gui_preferencesdialog.c:307
+msgid "Use Optionmenu"
+msgstr "Usar menú de opções"
+
+#: src/gui_preferencesdialog.c:287
+msgid "Comma separated list of modes"
+msgstr "Lista de modos separados por virgulas"
+
+#: src/gui_preferencesdialog.c:314
+msgid "Comma separated list of bands"
+msgstr "Lista de bandas separadas por virgulas"
+
+#: src/gui_preferencesdialog.c:322
+msgid "Remote data"
+msgstr "Dados remotos"
+
+#: src/gui_preferencesdialog.c:327
+msgid "When receiving data from another application (gmfsk, ktrack):"
+msgstr "Quando se recebem dados de outra aplicação (gmfsk, ktrack):"
+
+#: src/gui_preferencesdialog.c:335
+msgid "Add data directly to the log"
+msgstr "Acrescentar um novo QSO ao log"
+
+#: src/gui_preferencesdialog.c:341
+msgid "Add data to the QSO frame"
+msgstr "Acrescentar dados ao marco de QSO"
+
+#: src/gui_preferencesdialog.c:349
+msgid "Callsign"
+msgstr "Indicativo"
+
+#: src/gui_preferencesdialog.c:353
+msgid "Your Callsign"
+msgstr "Seu indicativo"
+
+#: src/gui_preferencesdialog.c:364
+msgid "Your location (ddd.mm)"
+msgstr "Sua localização (ggg.mm)"
+
+#: src/gui_preferencesdialog.c:386
+msgid "QTH locator"
+msgstr "QTH Locator"
+
+#: src/gui_preferencesdialog.c:392
+msgid "Units"
+msgstr "Unidades"
+
+#: src/gui_preferencesdialog.c:396
+msgid "Display distance in"
+msgstr "Mostrar distância em"
+
+#: src/gui_preferencesdialog.c:400
+msgid "Kilometers"
+msgstr "Quilómetros"
+
+#: src/gui_preferencesdialog.c:401
+msgid "Miles"
+msgstr "Milhas"
+
+#: src/gui_preferencesdialog.c:402
+msgid "Lookup"
+msgstr "Pesquisar"
+
+#: src/gui_preferencesdialog.c:407
+msgid ""
+"When clicking the \"?\" next to the callsign you can use your internet "
+"browser to look it up. \"<call>\" in the lookup-URL will be replaced by the "
+"callsign"
+msgstr ""
+"Quando clicar no \"?\" a seguir ao indicativo você pode usar a sua ligação à "
+"internet para pesquisar. \"<call>\" no campo de pesquisa será substituido "
+"pelo indicativo"
+
+#: src/gui_preferencesdialog.c:420
+msgid "Initial exchange to use for \"~\" (see the manual for details)"
+msgstr "Troca inicial para usar em \"~\" (veja o manual em detalhe)"
+
+#: src/gui_preferencesdialog.c:427
+msgid "Info"
+msgstr "Informação"
+
+#: src/gui_preferencesdialog.c:437
+msgid "Enable hamlib support"
+msgstr "Habilitar suporte de hamlib"
+
+#: src/gui_preferencesdialog.c:451
+msgid "_Select a Radio"
+msgstr "_Seleccionar um rádio"
+
+#: src/gui_preferencesdialog.c:458
+msgid "Attach to Device"
+msgstr "Conectar ao dispositivo"
+
+#: src/gui_preferencesdialog.c:501
+msgid "Comma separated list of commands for configuring your hamlib port"
+msgstr "Lista separada por virgulas para configurar a porta de hamlib"
+
+#: src/gui_preferencesdialog.c:509
+msgid "example: rts_state=ON,timeout=600,serial_speed=19200"
+msgstr "exemplo: rts_state=ON,timeout=600,serial_speed=19200"
+
+#: src/gui_preferencesdialog.c:516
+msgid "Use FCC emission designators for modes (e.g. A1A, J3E, etc.)"
+msgstr "Use designação de modos da FCC (E.j. A1A, J3E, etc)."
+
+#: src/gui_preferencesdialog.c:525
+msgid "Enable polling"
+msgstr "Habilitar consultas"
+
+#: src/gui_preferencesdialog.c:533
+msgid "Poll rig every"
+msgstr "Consultar equipamento cada"
+
+#: src/gui_preferencesdialog.c:552
+msgid "milliseconds"
+msgstr "milisegundos"
+
+#: src/gui_preferencesdialog.c:556
+msgid "Show S-meter on statusbar"
+msgstr "Mostrar S-meter na barra de estado"
+
+#: src/gui_preferencesdialog.c:560
+msgid "Show frequency on statusbar"
+msgstr "Mostrar frequência na barra de estado"
+
+#: src/gui_preferencesdialog.c:569
+msgid "Round frequency at digit"
+msgstr "Arredondar frequência a"
+
+#: src/gui_preferencesdialog.c:596
+msgid "Changing settings in the Logs section of this page requires a restart!"
+msgstr "Alterar definições na secção de logs desta página requer um restart!"
+
+#: src/gui_preferencesdialog.c:599 src/gui_preferencesdialog.c:736
+msgid "Logs"
+msgstr "Logs"
+
+#: src/gui_preferencesdialog.c:603
+msgid "Directory where the logs will be saved"
+msgstr "Directoria aonde se armanezam os logs"
+
+#: src/gui_preferencesdialog.c:615 src/gui_preferencesdialog.c:716
+msgid "Click here to change the path"
+msgstr "Clique aqui para mudar a rota"
+
+#: src/gui_preferencesdialog.c:621
+msgid "Comma separated list of logs to load at startup"
+msgstr "Lista separada por virgulas do log a carregar no inicio"
+
+#: src/gui_preferencesdialog.c:635
+msgid "Load logs by"
+msgstr "Carregar logs por"
+
+#: src/gui_preferencesdialog.c:640
+msgid "Time of last modification"
+msgstr "Tempo desde a última modificação"
+
+#: src/gui_preferencesdialog.c:641
+msgid "Alphabet"
+msgstr "Alfabeto"
+
+#: src/gui_preferencesdialog.c:647
+msgid "Saving"
+msgstr "Guardando"
+
+#: src/gui_preferencesdialog.c:652
+msgid "Save with every log change"
+msgstr "Salvar com cada mudança no log"
+
+#: src/gui_preferencesdialog.c:658
+msgid "Enable autosave"
+msgstr "Habilitar autoguardar"
+
+#: src/gui_preferencesdialog.c:667
+msgid "Autosave logs every"
+msgstr "Autosalvar logs cada"
+
+#: src/gui_preferencesdialog.c:686
+msgid "minutes"
+msgstr "minutos"
+
+#: src/gui_preferencesdialog.c:689
+msgid "Backup"
+msgstr "Backup"
+
+#: src/gui_preferencesdialog.c:695
+msgid "Use standard backup procedure"
+msgstr "Usar procedimento habitual de backup"
+
+#: src/gui_preferencesdialog.c:701
+msgid "Copy logs to a safe location"
+msgstr "Copiar os logs para um sitio seguro"
+
+#: src/gui_preferencesdialog.c:718
+msgid "Font"
+msgstr "Tipo de letra"
+
+#: src/gui_preferencesdialog.c:722
+msgid "Font to use for the log"
+msgstr "Tipo de letra a usar no log"
+
+#: src/gui_saveasdialog.c:60
+msgid "xlog - save as"
+msgstr "xLog - Guardar como"
+
+#: src/gui_saveasdialog.c:69
+msgid "Save QSO:"
+msgstr "Guardar QSO:"
+
+#: src/gui_saveasdialog.c:108 src/gui_saveasdialog.c:138
+msgid "Cannot save log: invalid entry for first and/or last QSO"
+msgstr ""
+"Não posso guardar o log: entrada não válida para o primeiro e/ou o último QSO"
+
+#: src/gui_saveasdialog.c:118 src/gui_savedialog.c:42
+msgid "xlog - saving"
+msgstr "xLog - Guardando"
+
+#: src/gui_savedialog.c:53
+msgid "One of your logs has not been saved, do you want to quit anyway?"
+msgstr "Um dos seus logs não foi guardado, Quer sair de todas as formas?"
+
+#: src/gui_savedialog.c:75
+#, fuzzy
+msgid "xlog - exiting"
+msgstr "xLog - exportando"
+
+#: src/gui_savedialog.c:86
+msgid "Are you sure you want to exit xlog?"
+msgstr ""
+
+#: src/gui_scorewindow.c:381
+msgid "xlog - scoring"
+msgstr "xLog - pontuando"
+
+#: src/gui_searchdialog.c:190
+msgid "xlog - searchresult"
+msgstr "xLog - Procurar resultado"
+
+#: src/gui_searchdialog.c:193
+#, c-format
+msgid "'%s' was not found"
+msgstr "'%s' não foi encontrado"
+
+#: src/gui_searchdialog.c:240
+msgid "xlog - search"
+msgstr "xLog - Procurar"
+
+#: src/gui_searchdialog.c:254
+msgid "Search this log"
+msgstr "Procurar neste log"
+
+#: src/gui_searchdialog.c:259
+msgid "Search all logs"
+msgstr "Procurar todos os logs"
+
+#: src/gui_searchdialog.c:269
+msgid "Search callsign field"
+msgstr "Procurar no campo do indicativo"
+
+#: src/gui_searchdialog.c:274
+msgid "Search all fields"
+msgstr "Procurar em todos os campos"
+
+#: src/gui_setupdialog.c:45
+msgid "xlog - setup"
+msgstr "xLog - Configuração"
+
+#: src/gui_setupdialog.c:55
+#, fuzzy, c-format
+msgid ""
+"Xlog has created %s, this is the directory where your log will be saved. You "
+"can change the default path for your logs in the preferences dialog.\n"
+"\n"
+"Now select Log -> New from the menu to create a log.\n"
+"\n"
+"Before you start logging, you should read the handbook by selecting Help -> "
+"Manual from the menu!"
+msgstr ""
+"XLog fez %s, esta é a directoria donde se guardará o seu log. Pode mudar o "
+"caminho pré-determinado para o seu log no diálogo de configuração.\n"
+"\n"
+"Agora seleccione Log->Novo no menú para criar um log."
+
+#: src/gui_tracedialog.c:143
+msgid "Please enable hamlib from the Preferences -> Settings dialog"
+msgstr "Por favor habilite hamlib desde Preferências -> Configuração"
+
+#: src/gui_tracedialog.c:150
+msgid "xlog - trace hamlib"
+msgstr "xLog - Trace o  hamlib"
+
+#: src/gui_tracedialog.c:177
+#, c-format
+msgid "Saving to %s"
+msgstr "Guardando a %s"
+
+#: src/hamlib-utils.c:167
+#, c-format
+msgid "Hamlib config parameter error: %s"
+msgstr "Erro de configuração de parametro de hamlib: %s"
+
+#: src/hamlib-utils.c:176
+#, c-format
+msgid "An error occured while opening port %s: %s"
+msgstr "Ocorreu um erro ao abrir a porta %s: %s"
+
+#: src/hamlib-utils.c:285
+#, c-format
+msgid "Hamlib error %d: %s"
+msgstr "Erro do Hamlib: %d: %s"
+
+#: src/hamlib-utils.c:293
+msgid ""
+"There was an error while communicating with your rig, hamlib has stopped"
+msgstr ""
+"Aconteceu um erro enquanto comunicava com o seu rádio, o hamlib foi encerrado"
+
+#: src/log.c:73
+#, c-format
+msgid "Backup to %s failed: %s"
+msgstr "Backup a %s falhou: %s"
+
+#: src/log.c:131 src/log.c:171 src/log.c:188 src/log.c:208 src/log.c:225
+#: src/log.c:242 src/utils.c:518
+#, c-format
+msgid "Unable to convert '%s' to UTF-8: %s"
+msgstr "Não posso converteir '%s' a UTF-8: %s"
+
+#: src/log.c:266
+msgid "Reading..."
+msgstr "Lendo ..."
+
+#: src/log.c:486
+#, c-format
+msgid "fork failed when saving log: %s"
+msgstr ""
+
+#: src/main.c:99
+#, c-format
+msgid "%s version %s\n"
+msgstr "%s versão %s\n"
+
+#: src/main.c:121
+#, c-format
+msgid "Creating ~%s directory."
+msgstr "Criando a directoria ~%s."
+
+#: src/main.c:126
+#, c-format
+msgid "~%s is not a directory."
+msgstr "~%s não é uma directoria."
+
+#: src/main.c:236
+msgid "xlog - startup"
+msgstr "xLog - Arranque"
+
+#: src/main.c:237
+msgid "xlog needs at least version 2.12 of the GTK+ libraries"
+msgstr "xlog necessita ao menos da versão 2.4 das livrarias GTK+"
+
+#: src/main.c:268
+msgid "Could not read dxcc table"
+msgstr "Não posso ler a tabela dxcc"
+
+#: src/main.c:271
+msgid "Could not read area table"
+msgstr "Não posso ler a tabela dxcc"
+
+#: src/main.c:384
+#, c-format
+msgid "Can not open log \"%s\""
+msgstr "Não posso abrir o log %s"
+
+#: src/main.c:452
+#, c-format
+msgid "Msgget failed: %s"
+msgstr "Falhou Msgget: %s"
+
+#: src/main.c:463
+#, c-format
+msgid "Socket setup failed: %s"
+msgstr "Falhou Msgget: %s"
+
+#: src/main.c:595 src/remote.c:138
+msgid "xlog - error"
+msgstr "xLog - erro"
+
+#: src/main.c:596
+msgid ""
+"There was an error while loading one of your logs, you may want to start "
+"xlog from a terminal to see what the errors are."
+msgstr ""
+"Houve um erro ao guardar um dos seus logs, pode arrancar xlog desde um "
+"terminal para ver quais são os erros."
+
+#: src/netkeyer.c:77
+msgid "closing of socket failed"
+msgstr "falhou ao fechar o socket"
+
+#: src/remote.c:139
+msgid "No log open while receiving remote data"
+msgstr "Nenhum log aberto enquanto se recebe dados remotamente"
+
+#: src/remote.c:478
+#, c-format
+msgid "Remote data received from %s (#%d), QSO %s added"
+msgstr "Dados recebidos desde %s (#%d), QSO %s acrescentado"
+
+#: src/remote.c:569
+#, c-format
+msgid "Remote data received from %s (#%d)"
+msgstr "Dados recebidos desde %s (#%d)"
+
+#: src/remote.c:572
+msgid "Warning: No hamlib support for remote data"
+msgstr "Aviso: Não há suporte para dados remotos do hamlib"
+
+#: src/remote.c:630
+msgid "Unable to accept new connection"
+msgstr "Incapaz de aceitar nova ligação"
+
+#: src/support.c:48
+#, c-format
+msgid "Widget not found: %s"
+msgstr "Elemento não encontrado: %s"
+
+#: src/support.c:94 src/support.c:117
+#, c-format
+msgid "Couldn't find pixmap file: %s"
+msgstr "Não posso encontrar o ficheiro gráfico: %s"
+
+#: src/support.c:124
+#, c-format
+msgid "Failed to load pixbuf file: %s: %s\n"
+msgstr "Falhou ao carregar o arquivo pixbuf: %s: %s\n"
+
+#: src/utils.c:317
+msgid "Ready."
+msgstr "Pronto."
+
+#: src/utils.c:629
+msgid "Log(s) autosaved"
+msgstr "Log(s) auto-guardados"
+
+#: src/logfile/flog.c:79 src/logfile/flog.c:86
+#, c-format
+msgid "The header of log %s is corrupted."
+msgstr "O cabeçalho do log %s está corrupto."
+
+#: src/logfile/flog.c:80
+msgid "It's length is smaller than 80."
+msgstr "O seu comprimento é menor que 80."
+
+#: src/logfile/flog.c:81 src/logfile/flog.c:88
+msgid "This does not look like an xlog file."
+msgstr "Não parece um arquivo do xlog."
+
+#: src/logfile/flog.c:87
+msgid "It does not start with DATE."
+msgstr "Não começa com DATE (data)."
+
+#~ msgid "Add"
+#~ msgstr "Acrescentar"
+
+#~ msgid "xlog - IOTA awards"
+#~ msgstr "xLog - Diplomas WAC"
+
+#~ msgid "xlog - WAC awards"
+#~ msgstr "xLog - Dipomas WAC"
+
+#~ msgid "xlog - WAS awards"
+#~ msgstr "xLog - Dipomas WAC"
+
+#~ msgid "xlog - WAZ awards"
+#~ msgstr "xLog - Dipomas WAC"
+
+#~ msgid "Distance: %d km, azimuth: %d deg"
+#~ msgstr "Distância: %d km, azimute: %d graus"
+
+#~ msgid "Distance: %d m, azimuth: %d deg"
+#~ msgstr "Distância: %d m, azimute: %d graus"
+
+#~ msgid "empty preferences file"
+#~ msgstr "ficheiro de preferências vazio"
+
+#~ msgid "document of the wrong type, root node is not xlog"
+#~ msgstr "documento de tipo errado, root node não é o xlog"
+
+#~ msgid "_Import"
+#~ msgstr "Importar..."
+
+#~ msgid "characters"
+#~ msgstr "caracteres"
+
+#~ msgid ""
+#~ "Select or enter a callsign (or part of a callsign) to search for in the "
+#~ "log"
+#~ msgstr ""
+#~ "Seleccione ou introduza um indicativo (ou parte do indicativo) para "
+#~ "procurar no log"
+
+#~ msgid "Keep this dialog open"
+#~ msgstr "Manter este menú aberto"
+
+#~ msgid "No columns selected, printing cancelled..."
+#~ msgstr "Não se seleccionarão colunas, impressão cancelada..."
+
+#~ msgid "portrait"
+#~ msgstr "Retrato"
+
+#~ msgid "Cannot get printer configuration, aborting..."
+#~ msgstr "Impossivel obter aa configuração de impressão, cancelando.."
+
+#~ msgid "Error while getting print environment"
+#~ msgstr "Error para obtener la variable de entorno de impresión"
+
+#~ msgid "Printing to %s%slog.ps"
+#~ msgstr "Imprimiendo a %s%slog.ps"
+
+#~ msgid "Printing log in the background"
+#~ msgstr "Imprimiendo el log en segundo plano"
+
+#~ msgid "%s: %1.2f%s %1.2f%s"
+#~ msgstr "Ubicación: %+1.2f %+1.2f"
+
+#~ msgid "Location: %1.2fN %1.2fE"
+#~ msgstr "Localização: %+1.2f %+1.2f"
+
+#~ msgid "Location: %1.2fS %1.2fW"
+#~ msgstr "Localização: %+1.2f %+1.2f"
+
+#~ msgid "Location: %1.2fS %1.2fE"
+#~ msgstr "Localização: %+1.2f %+1.2f"
+
+#~ msgid "xlog - print"
+#~ msgstr "xLog - Imprimir"
+
+#~ msgid "Range"
+#~ msgstr "Alcance"
+
+#~ msgid "Print all QSO's"
+#~ msgstr "Imprimir todos os QSOs"
+
+#~ msgid "Print QSO"
+#~ msgstr "Imprimir QSO"
+
+#~ msgid "To"
+#~ msgstr "Para"
+
+#~ msgid "Destination"
+#~ msgstr "Destino"
+
+#~ msgid "File"
+#~ msgstr "Ficheiro"
+
+#~ msgid "Paper"
+#~ msgstr "Papel"
+
+#~ msgid "Papersize"
+#~ msgstr "Tamanho do papel"
+
+#~ msgid "Pointsize"
+#~ msgstr "Tamanho do ponto"
+
+#~ msgid "Orientation"
+#~ msgstr "Orientação"
+
+#~ msgid "landscape"
+#~ msgstr "landscape"
+
+#~ msgid "Contests"
+#~ msgstr "Concursos"
+
+#~ msgid "Add empty Multiplier and Points columns"
+#~ msgstr "Acrescentar colunas de multiplicador e pontos vazias"
+
+#~ msgid "Latitude Out of Range (90N to 90S)"
+#~ msgstr "Latitude fora de alcance (90N a 90S)"
+
+#~ msgid "Longitude Out of Range (180W to 180E)"
+#~ msgstr "Longitude fora de alcance (180O a 180E)"
+
+#~ msgid "Minutes Out of Range (0 to 59)"
+#~ msgstr "Minutos fora de alcance (0 a 59)"
+
+#~ msgid "Faq"
+#~ msgstr "FAQ"
+
+#~ msgid "Thanks"
+#~ msgstr "Obrigado"
+
+#~ msgid "%s: not a valid locator"
+#~ msgstr "%s não é um locator válido"
+
+#~ msgid "FAQ"
+#~ msgstr "FAQ"
+
+#~ msgid "MANUAL"
+#~ msgstr "MANUAL"
+
+#~ msgid "Dialogs"
+#~ msgstr "Diálogos"
+
+#~ msgid "Exceptions"
+#~ msgstr "_Opções"
+
+#~ msgid "Clock"
+#~ msgstr "Relógio"
+
+#~ msgid "Other"
+#~ msgstr "Outro"
+
+#~ msgid "xlog - about"
+#~ msgstr "xLog - Acerca de"
+
+#~ msgid "Published under the GNU GPL License"
+#~ msgstr "Publicado debaixo dos términos da licença GNU GPL"
+
+#~ msgid "_Log"
+#~ msgstr "_Log"
+
+#~ msgid "_Settings"
+#~ msgstr "_Configuração"
+
+#~ msgid "Creating a new preferences file...\n"
+#~ msgstr "Criando um novo ficheiro de preferências...\n"
+
+#~ msgid "preferences not parsed successfully"
+#~ msgstr "as preferências não se podem analizar correctamente"
+
+#~ msgid "xlog - select color"
+#~ msgstr "xLog - Seleccione côr"
+
+#~ msgid "Save As"
+#~ msgstr "Guardar como"
+
+#~ msgid "Theme"
+#~ msgstr "Tema"
+
+#~ msgid "Theme color"
+#~ msgstr "Côr do tema"
+
+#~ msgid "Example"
+#~ msgstr "Exemplo"
+
+#~ msgid "Colored label"
+#~ msgstr "Etiqueta colorida"
+
+#~ msgid "Theme font"
+#~ msgstr "Fonte do tema"
+
+#~ msgid "Apply theme to the log (restart xlog if you change this)"
+#~ msgstr "Aplicar tema no log (reinicie xlog se alterar)"
+
+#~ msgid "Click here to change the theme color"
+#~ msgstr "Carregue aqui para mudar a côr do tema"
+
+#~ msgid "Modes/Bands"
+#~ msgstr "Modos/bandas"
+
+#~ msgid "Allocation of color failed in setlabelstyle"
+#~ msgstr "Falhou a atribuição da côr em setlabelstyle"
+
+#~ msgid "Allocation of color failed in setframestyle"
+#~ msgstr "Falhou a atribuição da côr em setframestyle"
+
+#~ msgid "Hamlib error: get_rigid failed"
+#~ msgstr "Erro de Hamlib: get_ridid failed"
+
+#~ msgid "Creation of logfile failed"
+#~ msgstr "Falhou a criação do log"
+
+#~ msgid "%d QSO's and %d countries loaded"
+#~ msgstr "%d QSO's e %d entidades carregados"

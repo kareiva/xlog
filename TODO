@@ -1,0 +1,10 @@
+
+1) When two logs are open, click the 2nd tab and dupe check it.
+   The program mistakenly dupe checks the log in the 1st tab.
+
+2) Double check that when all logs is selected, the lists which are created
+   should include QSOs from both logs.
+
+Problem: entirelist contains QSOs across multiple pages.
+    The index into the entirelist is NOT the correct index into the original list.
+    

@@ -1,0 +1,60 @@
+- REQUIREMENTS -
+----------------
+See the INSTALL file for package requirements when you want to compile xlog
+yourself.
+
+- HAMLIB SUPPORT -
+------------------
+If your rig supports data retrieval over the serial line, you should have
+a look at the Hamradio Control Libraries (hamlib) project page, at
+http://sf.net/projects/hamlib. Xlog can read your rig's frequency, mode
+and signal strength.
+
+- TESTING HAMLIB -
+------------------
+At his point you should probably read your rig's manual, to see how you
+should hook up your rig to the serial port. For my kenwood rig, I need
+a standard serial cable with two 9-pin connectors. You also need write
+permission to the serial port. On my system, this means I need to add
+myself to the dialout group, with a command like:
+
+	adduser 'username' dialout
+
+Next, you can test hamlib with rigctl, a binary distributed with hamlib.
+See which rigs are supported:
+
+	rigctl --list
+
+Then start rigctl with your model number, e.g. '210' for a kenwood TS-870S,
+hooked up to COM2:
+
+	rigctl -r /dev/ttyS1 -m 210
+
+Now you can check out if mode, PTT, frequency, signal strength and power
+(all used by xlog) are retrieved. At the 'Rig command:' prompt, type:
+
+	'f': retrieve frequency
+	'm': retrieve mode
+	't': retrieve PTT (TX/RX mode)
+	'l' and then 'STRENGTH': retrieve signal strength (-54=S0 and 0=S9)
+	'l' and then 'RFPOWER': retrieve rig power (0.39 = 100 Watts)
+
+The hamlib FAQ at http://hamlib.sf.net/faq.html gives some answers to common
+problems. You could also ask around on the hamlib mailing list, see:
+http://lists.sourceforge.net/lists/listinfo/hamlib-developer.
+
+- XLOG USAGE -
+--------------
+For a description on how to use xlog, select help -> Documentation -> Manual
+from the menu.
+
+- DEVELOPMENT -
+---------------
+If you are interested in xlog development, go to 
+http://savannah.nongnu.org/projects/xlog. Information about a mailing list for
+xlog development is available on this page, where you can ask questions about
+xlog.
+
+- CONTACT -
+-----------
+The main author can be contacted by e-mail: kb1oiq@arrl.net

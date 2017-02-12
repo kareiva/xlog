@@ -1,0 +1,46 @@
+TODO ideas from the current maintainer
+- xlog-2.0
+  * add a GUI button to (re)start hamlib
+  * create a GUI window to fill in the Cabrillo header
+  * keep it a logger, and do it *very* well
+  * Communitate with LoTW and eQSL
+
+- xlog > 2.0
+  * unknown
+
+TODO ideas from the original author
+- xlog-2.0:
+* The final 2.0 release will contain only updated maps, bugfixes and
+  language updates.
+
+- xlog-2.1:
+* Add more rig control, e.g. change bands from within xlog
+* Log as a diary (Martin AA6E).
+* Open search as a separate log.
+* Mass fill of QSL sent field (4Z5ST)
+
+- xlog-2.2:
+* eqsl.cc and lotw capabilities 
+
+- xlog-2.3:
+* Rotor control from with xlog (Rob, KL7NA/W7)
+* Data exchange with xdx
+* Mode dependend scoring ?
+
+- xlog-3.0:
+* full transition to XDIF or ADIF format
+
+- XDIF support:
+* Leigh, WA5ZNU has developed a log format based on XML which is called XDIF.
+  This format can save both log / user data and program settings. Being such
+  a flexible format it may eventually become the default xlog format. Please
+  have a look at www.xdif.org for more information.
+
+- Simple logging protocol:
+* Tomi, OH2BNS has initially proposed a kind of protocol to allow more
+  information exchange between gmfsk and xlog, e.g. gmfsk could query the log
+  so we can fill in the gmfsk fields while typing the callsign. The latest idea
+  is to use a http port for this and return the data in xml format. When we do
+  this, we could even use a web-browser for log querying. We would require a
+  html page and a XSLT style sheet to display the results.
+

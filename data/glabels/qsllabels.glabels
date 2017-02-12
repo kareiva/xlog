@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<glabels:Label xmlns:glabels="http://snaught.com/glabels/0.4/" rotate="False" width="255" height="142">
+  <glabels:Media_Type>Agipa 119488: Agipa 119488: Business Cards</glabels:Media_Type>
+  <glabels:Text x="22,3333" y="25,3333" font_family="Helvetica" font_size="16" font_weight="Bold" font_italic="False" justify="Left" color="0xff0016ff">
+    <glabels:Line>
+      <glabels:Field name="3"/>
+    </glabels:Line>
+  </glabels:Text>
+  <glabels:Text x="21,5" y="51,3333" font_family="Helvetica" font_size="14" font_weight="Regular" font_italic="False" justify="Left" color="0x000000ff">
+    <glabels:Line>Date: <glabels:Field name="1"/></glabels:Line>
+  </glabels:Text>
+  <glabels:Text x="151" y="52" font_family="Helvetica" font_size="14" font_weight="Regular" font_italic="False" justify="Left" color="0x000000ff">
+    <glabels:Line>GMT: <glabels:Field name="2"/></glabels:Line>
+  </glabels:Text>
+  <glabels:Text x="21,3333" y="75,8333" font_family="Helvetica" font_size="14" font_weight="Regular" font_italic="False" justify="Left" color="0x000000ff">
+    <glabels:Line>Freq: <glabels:Field name="4"/> MHz</glabels:Line>
+  </glabels:Text>
+  <glabels:Text x="150,5" y="75,5" font_family="Helvetica" font_size="14" font_weight="Regular" font_italic="False" justify="Left" color="0x000000ff">
+    <glabels:Line>Mode: <glabels:Field name="5"/></glabels:Line>
+  </glabels:Text>
+  <glabels:Text x="22" y="99,6667" font_family="Helvetica" font_size="14" font_weight="Regular" font_italic="False" justify="Left" color="0x000000ff">
+    <glabels:Line>RST: <glabels:Field name="6"/></glabels:Line>
+  </glabels:Text>
+  <glabels:Merge_Properties type="Text/Tab" src="">
+    <glabels:Field key="1" loc="1"/>
+    <glabels:Field key="2" loc="2"/>
+    <glabels:Field key="3" loc="3"/>
+    <glabels:Field key="4" loc="4"/>
+    <glabels:Field key="5" loc="5"/>
+    <glabels:Field key="6" loc="6"/>
+    <glabels:Field key="7" loc="7"/>
+    <glabels:Field key="8" loc="8"/>
+    <glabels:Field key="9" loc="9"/>
+    <glabels:Field key="10" loc="10"/>
+  </glabels:Merge_Properties>
+</glabels:Label>

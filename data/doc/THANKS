@@ -1,0 +1,48 @@
+- Thanks to the following people:
+
+------------------------------------------------------------------------------
+* Rob Steenburgh, AD0IU, for his help with the gcc compiler issue, and GCC Bug #28901.
+
+* Andrew Siegel, N2CN, for submitting a patch to fix gui_dialogsdialog.c
+
+* Chris Story, K6RWJ, for writing new web based documentation for version 2.0.6.
+
+* Ted Williams, WA0EIR, for writing twlog and giving me the inspiration
+  for writing xlog.
+
+* Tomi Manninen, OH2BNS for sending me suggestions for remote logging
+  and integration with gmfsk.
+
+* Stephane Fillod, F8CFE, for his interest in xlog, setting up the xlog
+  project page and becoming a xlog developer.
+
+* Alexandru Csete, OZ9AEC, for writing grig, a gnome frontend to hamlib,
+  see http://groundstation.sourceforge.net/?grig. Parts of grig were adopted for
+  xlog. Alex also provided danish translations for xlog.
+
+* Jean-Luc Coulon, F5IBH, for betatesting and french translations.
+
+* Luc Langehegermann, LX2GT, for integration with ktrack.
+
+* Jaime Robles, EA4TV, for spanish translations.
+
+* Matt Dawson, GW0VNR, for maintaining the freebsd port and hosting the xlog
+  mirror pages.
+
+* Polish translations by Boguslaw Ciastek, SQ5TB.
+
+* Slovak translations by Michal Karas, OM4AA.
+------------------------------------------------------------------------------
+
+- And the following betatesters: 
+
+Bryn Joynes (N4VM), Ernest Stracener (KG9NI), David Kjellquist (WB5NHL),
+James Crawford (AE6BO), Bob Lisbonne (KG6HOD), Wilbert Knol (ZL2BSJ), 
+Andrea Borgia (IZ4FHT), David Rowe (KC1DI), Bob Finch (W9YA), 
+Berndt Wulf (VK5ABN).
+
+See the file TODO for suggestions that people have made. 
+Thanks to all who send me feedback, it is much appreciated.
+
+- Joop PG4I -
+- Andy KB1OIQ -

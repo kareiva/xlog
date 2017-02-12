@@ -1,0 +1,589 @@
+- Changes for xlog version 2.0.14 - 2016-dec-11
+  * Updated cty.dat to 20161124 (cty-2614)
+  * Fixed compiler error with new gcc, in adif.c, with unused variable
+    * GCC Bug #28901, https://gcc.gnu.org/bugzilla/show_bug.cgi?id=28901
+  * Fixed math library linker issue exposed by recent gcc change
+  * Updated the author's email address
+  * Fixed a GUI bug in Settings->Dialogs and Windows->Scoring (thanks, Andrew N2CN for the patch)
+  * Hamlib preference setting now understands /dev/serial/by-id
+  * Hamlib preference setting shows all /dev/ttyUSB* that are present
+  * Fixed crash with Select a Radio dialog in Hamlib preferences
+
+- Changes for xlog version 2.0.13 - 2015-apr-19
+  * Fixed date in cabrillo3 output to be: yyyy-mm-dd
+  * Fixed date in EDI output to be: yymmdd
+  * Fixed QSORecords in EDI output
+  * Updated cty.dat to 20150420 (cty-2505)
+  * Fixed Bug #44547: Added JT9 modes
+  * Fixed Bug #44259: broken dupe checking
+
+- Changes for xlog version 2.0.12 - 2014-apr-01
+  * Updated cty.dat to 20140331 (cty-2404)
+
+- Changes for xlog version 2.0.11 - 2013-nov-16
+  * Updated cty.dat to 20131009
+  * Fixed "Write and Click All"
+  * Increased log name limit to 30 characters
+  * Fixed truncated "QSO <number>" label in main window
+  * Fixed dxcc 3 character callsigns
+
+- Changes for xlog version 2.0.10 - 2013-July-22
+  * Fix compilation warning in labels.c regarding strptime
+  * Convert all compilation warnings into errors
+  * Get rid of the "unused-but-set-variable" warnings
+
+- Changes for xlog version 2.0.9 - 2013-July-20
+  * Fix month to number conversion for non-English languages in Cabrillo export 
+    (thank you Alex EW1LN for reporting the problem and testing the fix)
+  * Modify date in TSV file to be ISO 8601 format to aid in spreadsheet import
+  * Updated cty.dat to 20130625
+
+- Changes for xlog version 2.0.8 - 2013-May-23
+  * Fix Debian lint issue (config.sub config.guess)
+  * Merge Debian bug #617374 fix into dxcc.c to avoid segfault
+  * Fix cabrillo import - incorporate patch from Thomas (DL1JBE) Beierlein
+  * Updated cty.dat to 20130510
+
+- Changes for xlog version 2.0.7 - 2013-March-31
+  * Fixed remarks box for Unity et al (bug #38637)
+  * Updated cty.dat to 20130312 (CTY-2303)
+
+- Changes for xlog version 2.0.6 - 2013-March-01
+  * First version with new maintainer: Andy Stewart, KB1OIQ
+  * Updated to Cabrillo v3 format - export and import (bug #37740)
+  * Added preference setting for "Are You Sure" dialog on exit (bug #37761)
+  * Updated cty.dat to 20130222 (CTY-2302) (bug #37748)
+  * Updated to Amateur Data Interchange Format (ADIF) 2.2.7 format (bug #37741)
+  ** Added a large number(!) of modes
+  ** Added the 560m band
+  * Fixed cosmetic issues with the scoring window (bug #37743)
+  * Fixed Ubuntu bug #608718: Keyer window displayed, hitting return in RX(RST)
+    with no call logged bogus QSO.
+  * Fixed Task #10916 - user preference to save Cabrillo freq or band
+  * New manual from Chris Story (K6RWJ)
+  * Entering "callsigns" like "3D2/R" will show proper DXCC entity in scoring
+    window locator box for all except WAE countries.
+
+- Changes for xlog version 2.0.5 - 2011/02/23
+  * Swedish translations updated by Peter, SM4ABE
+  * 2 patches from the Gentoo repository:
+    ADIF field should be named TX_PWR instead of TX_POWER.
+    Xlog now exports the QSLIN and QSLOUT fields.
+    Thanks to Tom DL1JBE.
+  * When printing the log, the last QSO would not print. This has been
+    fixed. Reported by Bruce, WB0GAG (fixes bug #29941).
+  * Make sure the '~' macro for the keyer does not crash xlog when there is
+    no log open.
+  * Fix a crash when hitting enter in the RX(RST) field when the keyer is
+    active, see Ubuntu bug #608718. Also, the QSO is now added to the log
+    correctly (fixes bug #27888).
+  * Update some GTK Calls with newer calls which have become
+    deprecated since version 2.20. Patch by Charles AA1VS, thanks!
+    Done the same for GTK version 2.22. This means you need at least version
+    2.18 of GTK+ to compile xlog.
+  * Fixed ADIF file corruption when a non-ham frequency is filled in.
+    Reported by Pierfrancesco, IK5PVX (fixes bug #29122).
+  * Done some work on type and find. Xlog would look up a callsign with every
+    key pressed. This has a disadvantage as Graeme, ZL2APV, has pointed out.
+    Suppose we log AH6V which is already in our logs, xlog will fill in name
+    and QTH. But if we want to log AH6VA, the same name and QTH will appear,
+    xlog will stop after the 'V'. The new behaviour is much better. Lookup
+    will be activated when the callsign field loses focus, so after using
+    the <TAB> key or clicking the mouse somewhere else (fixes bug #27477).
+  * When there is no log open and another application wants to send data to
+    xlog, the warning dialog with "No log open while receiving remote data"
+    will be displayed only once, so we don't block the gui (fixes bug #31635).
+  * Changing the name of the free fields in the log now updates the column
+    names in all the logs which are opened (fixes bug #27251).
+  * To speed up logging, typing <ENTER> in the callsign field will jump to the
+    TX(RST) field. Suggested by Graeme, ZL2APV.
+  * cty.dat updated to version 20110121.
+
+- Changes for xlog version 2.0.4 - 2010/10/25
+  * Upgrade to gettext-0.18.1.
+  * 2 patches by Tom, DL1JBE for buffer overruns in logfile import and
+    reading much bigger cty.dat files.
+  * Fix some compilation warnings with gcc-4.4.5.
+  * Correct the callsign lookup URL for qrz.com.
+  * cty.dat updated to 20101025.
+
+- Changes for xlog version 2.0.3 - 2009/07/17
+  * xlog will now display an exit confirmation dialog whenever you want to
+    exit the program.
+  * This release fixes crashes when the function keys are used for the keyer.
+    Thanks Jack, AK7O for reporting.
+  * Remote logging now adds a "?:" string, which is used by eepkeyer written
+    by Mike K6EEP, see http://www.hamsoftware.org. You will have to set
+    "add data to QSO frame" in the first page of the preferences dialog.
+    Eepkeyer now wil send one character at a time for the callsign, which
+    can be used for dupe checking. Patch by Mike, K6EEP.
+  * When bands are removed or added from the scoring window through "Settings
+    -> Dialogs and Window", the scoring window will now get updated
+    correctly. Reported by Ron, W6FM.
+  * Dupe checking did not work when checking against other bands. This has
+    been fixed.
+  * A new tool has been added. When "Tools -> Find unknown countries" is
+    selected, xlog will show a list of contacts for which DXCC lookup fails.
+    You can then correct this by using a "DXCC-" string in the awards column.
+  * There were several minor bugfixes.
+  * cty.dat updated to cty-1912.
+
+- Changes for xlog version 2.0.2 - 2009/06/10
+  * This fixes distance and azimuth calculation for stations west of
+    Greenwich. Thanks to Dana, AF7Z for reporting.
+  * Changing the locator in the preferences dialog now correctly updates the
+    corresponding latitude and longitude entries.
+  * You might need to re-configure your location in the preferences dialog
+    with this release.
+  * cty.dat updated to cty-1909.
+
+- Changes for xlog version 2.0.1 - 2009/02/23
+  * Compiler flags have been fixed to avoid conflicts between different
+    versions of GTK+ and GLIB.
+  * Add a compilation fix for 64 bit architectures.
+  * The desktop menu entry has been fixed.
+  * The win32 version will now use the native windows fork function for
+    displaying the handbook so the gui will not get blocked.
+  * When Options -> Country Map is displayed for the first time, xlog will
+    display a map if the awards or callsign fields are filled correctly.
+    Reported by Larry, W4LK.
+  * Using ctrl-k no longer unselects a possible selected QSO. This way you
+    can update a logged QSO with the help of ctrl-k.
+  * cty.dat updated to cty-1902.
+
+- Changes for xlog version 2.0 - 2009/02/10
+  * A fix has been added for displaying Help -> Keys from the menu.
+  * Fixed a crash after creating a new log which already exists.
+  * Fixed a crash which occurs when attempting to print when no log is open.
+    Thanks Jean-Luc, F5IBH for reporting.
+  * A map would sometimes not be updated when changing a QSO, fixed.
+    Thanks Tom, DL1JBE for reporting.
+  * This release fixes drawing of the locator map when a band is changed. This
+    was reported by several people and tested by 4Z5ST, IK5PVX and CT1DRB.
+  * WB5BKL has reported no QSO data when exporting to ADIF with number greater
+    than 1 in the first QSO selection box, This has been fixed.
+  * Callsign sorting and grouping now only works when exporting to TSV.
+  * Make sure we do not include newlines and tabs when receiving remote data.
+    Reported by Pierfrancesco, IK5PVX.
+  * When exporting to cabrillo truncate frequency to kHz on shortwave and
+    use the correct strings for UHF bands.
+  * cty.dat has been updated to version 1901.
+  * xlog now respect the --docdir switch from 'configure'. Patch by Tom DL1JBE.
+  * Spanish translation updates by Jaime, EA4TV.
+  * Portuguese translation updates by David, CT1DRB.
+  * Swedish translations updated by Peter, SM4ABE.
+  * German translations updated by Martin, DL5RMH.
+  * Slovak updated by Mike, OM4AA.
+  * French updated by Jean-Luc, F5IBH.
+  * Polish updated by Boguslaw, SQ5TB.
+  * Czech translations updated by Martin, OK1RR.
+  * Italian updated by Luca Monducci of the Debian Italian Localization team.
+  * Danish has been removed because it has been unmaintained for a long time.
+  * A note has been added to the INSTALL file for people having trouble
+    compiling xlog with language support on FreeBSD.
+  * A first win32 binary release is distributed, which lacks the following:
+    - There is no data exchange with other applications.
+    - Printing has been disabled.
+    - There is no keyer available.
+    Reports are very welcome, especially about the hamlib functionality. I
+    don't own a windows OS, the binary was tested on linux/wine, so YMMV.
+
+- Changes for xlog version 1.9 - 2009/01/09
+  * Czech translation updates by Martin, OK1RR.
+  * cty.dat has been updated to version 1817.
+  * When doing a TSV export, records can now be sorted by DXCC and callsign.
+    Sorting by callsign is especially useful for printing multiple QSO's
+    on one label when using glabels. Thanks Stephane, F8FCE.
+    You can determine how many QSO's per label are printed by changing the
+    TSV export settings in the Dialogs and Windows -> export page.
+  * Patch by Jon, LA4RT so xlog can send latin-1 character to cwdaemon.
+  * xlog can now extract the version of cty.dat, it will be displayed when
+    showing the about dialog.
+  * It is now possible to load logs by alphabet or by "last modification date",
+    the setting for this is in the Logs page of the preferences dialog.
+    Thanks Pierfrancesco Caci, IK5PVX for suggesting.
+  * The print dialog now adds a page where you can decide what columns to
+    print. Suggested by Ed, W3NR and Boris, 4Z5ST.
+  * Ctrl-a is no longer used for adding a QSO. Instead, you should use ctrl-w
+    (write to log). This means ctrl-a (select all) is available for selecting
+    text in xlog's text entries. For closing a log, you now need to use
+    ctrl-shift-w. Thanks Len, WT6G for the idea.
+  * The documentation has been moved to /usr/local/share/doc/xlog. The glabels
+    template has moved to /usr/local/share/doc/xlog/glabels.
+  * Country maps have been added. Use Options->Country map to display it.
+  * A button next to the callsign entry has been added. When clicked it will
+    lookup the callsign with your internet browser on your preferred server.
+    The settings for this server is on the Info page of the preferences dialog
+    and takes the form http://www.qrz.com/<call>, where <call> will be replaced
+    with the callsign. Suggested by Rob, KL7NA and Boris, 4Z5ST.
+  * It is no longer possible to view scoring for an award when the scoring
+    window is not active.
+  * A new macro has been added to the keyer. '~' stands for the last exchange
+    message received. It can be used in contests where you forward the last
+    exchange. The initial message can be set in page 2 if the preferences
+    dialog. For more information read the manual. Thanks Jon, LA4RT for the
+    initial patch.
+
+- Changes for xlog version 1.8.1 - 2008/09/01
+  * This fixes the use of the ctrl+k key and fixes the use of defaults.
+ 
+- Changes for xlog version 1.8 - 2008/08/28
+  * XML is no longer used for saving and recalling preferences. The new config
+    file is xlog.cfg which is placed in $HOME/.xlog and uses the GKeyFile
+    format. So you will need to reconfigure xlog.
+  * The Control-Shift-A key combination has been replace by Control-space,
+    which is easier to use.
+  * Printing has changed, xlog now uses native GTK+ printing instead of the
+    libgnomeprint libraries. This means there now is a separate dialog for
+    "Page Setup" and "Print" under the Log menu. "Page Setup" allows you to
+    choose landscape or portrait for the printed log, the default being
+    portrait. When choosing print, you can select a printer or print to a
+    pdf / postscript document.
+  * Selecting of columns for printing has been removed. You should choose
+    portrait or landscape in the "Page Setup" dialog and a suitable
+    magnification in the "Print" dialog to make sure your log fits on paper.
+  * Extra columns for contests have been removed in the printed log. Most
+    contest admins will accept cabrillo logs anyway.
+  * xlog now uses a fixed 12 points lettertype for printing.
+  * xlog now prints the logname and the printdate in the footer.
+  * When selecting Edit->Find or ctrl+f and a find dialog is already open,
+    xlog now will focus this dialog instead if bringing up a second one.
+  * The search dialog has been redesigned. You can now search for a callsign
+    in the callsign field or search for a string in any of the other fields.
+    You can also search in the current log or all of the open logs.
+    The dialog will be kept open until the Close button is clicked.
+  * Ctrl+6 or "Tools->Awards->Locator" will now show a list of maidenhead
+    locators worked and confirmed on different bands. You will need to enable
+    locator scoring in the "Settings->Dialogs and Windows" scoring page for
+    this to work.
+  * Ctrl+7 will draw a world map with locators as colored squares.
+    Worked squares are red, confirmed squares green. You can select the band
+    you want to see scoring for. The locator is shown as a tooltip when you
+    move your mouse over the map.
+  * Editest fixes by Stephane: a fix to the editest date reading and ability
+    to retrieve band freq for that log format.
+  * The import dialog now adds the possibility to import into the current log.
+    After import all columns in the log are enabled and you should use the
+    log-editor the show/hide columns. The log may also need sorting.
+    Suggested by David Quental, CT1DRB.
+  * Import now uses the GtkAssistant widget in which the user is guided
+    through the import process.
+  * Adif fixes for conversion from band to frequency higher than 28 MHz.
+  * Handling of the keyer has changed. In CQ mode, after the CQTU entry is
+    sent, the QSO is automatically added to the log. Likewise, in S&P mode
+    the QSO is added after S&PTU is sent. Suggested by Al, NH7O.
+  * Portuguese translations by David, CT1DRB.
+  * Italian translations by Carlo Dormeletti, I-3929.
+  * Polish by Boguslaw Ciastek, SQ5TB updated.
+  * Fixed a crash when receiving remote data and no log open. Reported by
+    Joshua, KC0BUF.
+  * xlog now uses the latest CTY.DAT revision (CTY-1808).
+
+- Changes for xlog version 1.7 - 2008/01/30
+  * Scroll to the last QSO when the log is automatically loaded and there
+    are more than 1000 QSO's. Thanks Jon LA4RT for reporting.
+  * Display of the about dialog has been fixed.
+  * TSV export for glabels has been fixed. The exported columns did not match
+    the ones in the 'Settings->Dialogs and Windows->export' setting.
+    Reported by John, K3GHH.
+  * We no longer use tiny fonts for the remarks entry and when importing
+    logs. It is easier in the eyes. Reported by Hein, PA0NQ.
+  * The info page of the preferences dialog now updates QRA locator when
+    latitude/longitude is changed and vice-versa.
+  * Xlog now uses the functions provided by hamlib for calculating distance
+    and bearing.
+  * The old behaviour has been restored when a DXCC country has been confirmed,
+    country worked count will be set to "0".
+  * The same behaviour has been added for all the other awards, so if a 
+    country has been confirmed, the count is set to zero. Otherwise, the number
+    of countries will be displayed.
+  * A new key combination has been added, Control-Shift-A will add a QSO and
+    fill in defaults for the next QSO. It is the same as using Control-a
+    followed by Control-k. This is especially useful in contests. Requested
+    by Dominique, HB9HLI.
+  * The following changes by Stephane Fillod, F8CFE:
+  * WAS, WAZ, IOTA and locator scoring have been added.
+  * Xlog now knows how to import IOTA contest logs and fills in the AWARDS
+    field.
+  * It does work also with any ARRL contest where the state is exchanged.
+  * EDI import is now capable of filling in BAND and POWER fields.
+  * EDI import fixed when importing utf-8 dates.
+  * EDI export: take into account the change of wwl() logic.
+  * EDI export properly generates CRLF eol (according to official format).
+
+- Changes for xlog version 1.6.2 - 2007/12/03
+  * Because of using the old wwl code, locator distance calculation stopped
+    working. This has been fixed. Thanks to Stephane for the patch!
+
+- Changes for xlog version 1.6.1 - 2007/11/28
+  * Compilation fixes.
+  * Fix appearance of the scoring window. Thanks to flavio, IK3OCD and 
+    Boris, 4Z5ST for reporting.
+  * Fix power retrieval from the rig. Thanks Pat, KB8PYM and Martin, AA6E
+    for the report.
+  * Some fixes for EDI and EDITEST file format, patch by Stephane, F8CFE.
+  * Some changes to the S-meter coding which will hopefully make it more
+    accurate.
+  * If there is no communication with the rig, hamlib will be stopped and
+    a warning dialog will be shown.
+  * The wac scoring is now updated correctly when a log is closed.
+  * Country worked count would be set to "0" whenever you would have at
+    least one confirmed QSO with that country. Patch by Stephane.
+  * When using the bandoptionmenu the band would sometimes be truncated.
+  * WAC scoring will now get updated when importing a log.
+  * Include the old wwl code again because of license problems with the new
+    code.
+  * All of xlog is now GPL version 3.
+
+- Changes for xlog version 1.6 - 2007/11/05
+  * Swedish translation updates by Peter, SM4ABE
+  * The "worked before" window is now activated with "Control+Shift w".
+  * There was a small bugfix for the "worked before" window. Selection of
+    QSO's in this window would sometimes fail when several contacts with the
+    same callsign were displayed.
+  * German translation thanks to Martin, DL5RMH.
+  * Defaults now also work when the band- and modeoptionmenus are activated
+    in the QSO frame. Thanks to DL5MRH.
+  * The UTC time length now is truncated to HHMM (the default for xlog), even
+    if the log displays time in seconds.
+  * Time length is not touched when updating a QSO if hours and minutes
+    are the same. Both changes suggested by Martin, DL5RMH.
+  * Frequency is not touched when using "update" when the frequency is
+    the same as used in the optionmenu. For example: if the optionmenu uses
+    "7" and the frequency in the log says "7.030" we don't change it when
+    using "update". Suggested by Martin, DL5RMH.
+  * The FAQ has been removed and integrated with the manual.
+  * The manual has been rewritten and is now available as html, see
+    /usr[/local]/share/xlog/manual/index.html.
+  * xlog now uses xdg-open (available from the xdg-utils package) for opening
+    URL's and for reading the manual from the menu. xdg-open always uses the
+    default browser as configured for your gnome, kde or xfce desktop.
+  * xdg-email is used for opening "mailto:" links, this is only important for
+    the about dialog.
+  * A small fix for Cabrillo, so we correctly export USB contacts. Thanks
+    Jacob Anawalt, KD7YKO.
+  * A Cabrillo import fix for NAQP contests by Jacob, KD7YKO.
+  * Another fix from Jacob which fixes a crash when using large remarks
+    fields.
+  * xlog has been ported to the latest GTK+ version, which is 2.12.0.
+  * The keyer window is now prevented from resizing when the end of line is
+    reached. Thanks Al, NH7O for reporting.
+  * WAC (Worked All Continents) award scoring has been added. You will have
+    to enable it from the Settings -> 'Dialogs and Windows' -> Scoring page.
+    This adds a new valid entry for the AWARDS entry. You can use "WAC-"
+    to modify a continent lookup. Valid strings are "NA EU SA OC AS AF".
+    For example, UA9A callsign are located in Europe, but xlog will think
+    it is Asia. Just add "DXCC-EU" to the AWARDS column.
+  * An overview of your WAC scoring can be seen by selecting Tools ->
+    Awards -> WAC from the menu. Ctrl + 2 is a shortcut for this.
+  * xlog will now recognise K1-K0 and VK1-VK0 callsign districts.
+  * When importing a cabrillo file, a remark can be added to all of the log
+    fields by entering a value in the import dialog.
+  * Adopted the wwl rewrite by Diane, VA3DB.
+
+- Changes for xlog version 1.5 - 2007/01/30
+  * Installation of the desktop icon has been fixed.
+  * The awards entry is now cleared when using Ctrl-y.
+  * Setting the autosave value to zero will disable autosave.
+  * The log open dialog adds a checkbutton, which allows opening a log
+    read-only.
+  * Accessing the menu with Ctrl-F10 works again. You need to make sure that
+    your window manager does not use Ctrl-F10, e.g. it is used by xfce to
+    access the 10th desktop. Note added to the handbook.
+  * To facilitate maintainance translation of the handbook and FAQ is no
+    longer supported.
+  * The Settings->Dialogs menu has been renamed "Dialogs and Windows".
+  * Scoring page added to the "Dialogs and Windows" dialog. On this page you
+    can decide which bands should be used for scoring.
+  * Some changes to the code to fix compilation on MAC OS X. Thanks to IZ0ETE
+    for reporting.
+  * Czech translations updated.
+  * All strings in the GUI refering to "GMT" have been named "UTC".
+  * When in the middle of a dupecheck which takes very long, it can be aborted
+    by clicking the 'Cancel' button.
+  * A new option has been added to the first page of the preferences dialog.
+    When "use free fields to add distance and azimuth to the log" is checked,
+    distance and azimuth will be calculated from the locator field (when
+    present) and added to the log. Thanks to Richard, G8JVM.
+  * All available amateur radio bands and modes (as used by ADIF) are now
+    added to the band- and mode-optionmenus when xlog is started for the very
+    first time.
+  * When importing a cabrillo file, date, mode and exchange is now imported
+    correctly. Thanks Nate, N0NB.
+  * ADIF export has been improved. Whenever there is an exchange used in the
+    RST report, the designated STX, SRX or STX_STRING, SRX_STRING ADIF fields
+    will be used.
+  * The handbook has been improved.
+
+- Changes for xlog version 1.4 - 2006/11/29
+  * There were several DXCC lookup fixes.
+  * Activation of the keyer window has been moved to the options menu.
+  * When exiting xlog, the keyer strings are now saved correctly.
+  * A new item has been added to the help menu, called 'DXCC list'. It
+    displays the current entries of cty.dat. Every column in this window
+    can be sorted.
+  * A socket has been added to xlog. Xlog will listens on port 7311 for data
+    to be added to the xlog. See data/remote/client.c for example code.
+  * An "AWARDS" column has been added to the logs. You can activate it by using
+    the log editor. For now, this column can be used to overwrite DXCC lookups.
+    To use it you must enter a country prefix, which can be looked up in the
+    DXCC list. For example: the 2002 baker island expedition has used the
+    callsign K1B. Xlog will think it is United States, but you can overwrite it
+    by putting the number DXCC-KH1 in the AWARDS column.
+  * Locale conversion of the date in ADIF export was improved. Thanks to
+    Martin, OK1RR for reporting.
+  * A return in the remarks field is replaced with a space when added to the
+    log to prevent log truncation. Reported by Fredrik, OH1HSN.
+  * Return now invokes "OK" in most dialogs, patch by Jon, LA4RT.
+  * The main menu is accessed with ctrl-F10, so the F10 key can be used
+    by the keyer.
+  * Underscores are removed from all of the menus, so you can't use the ALT-key
+    with the menu anymore. Instead, this key is now used for quickly pressing
+    buttons in the QSO-frame. All of the labels in the QSO frame which have
+    an underscore will grab focus to the entry next to it if the ALT-key is
+    used. When a default is present it will be filled-in automatically.
+  * The ADIF QSL_VIA field is now imported when one of the free fields is
+    named QSL_VIA.
+  * ADIF import has been fixed for logs with empty lines and returns inside
+    a field.
+  * File naming for ADIF import has been fixed.
+  * Swedish translations by Peter Landgren, SM4ABE.
+  * When multiple logs are loaded at startup the last page will get focus.
+  * A scoring window has been added, activate with Ctrl+j. This window now
+    holds the callsign prefix lookup with calculated distance and beam heading.
+    The top table of this window displays the number of times a country is
+    worked or "0" if confirmed. The bottom table shows the total number of
+    worked and confirmed DXCC countries for every band.
+    The scoring window focuses on the major hf-bands and does not look at the
+    mode of transmission. Future xlog versions will add more bands and modes
+    for scoring.
+  * An overview of your DXCC scoring can be seen by selecting Tools ->
+    Awards -> DXCC from the menu. Ctrl + 1 is a shortcut for this.
+  * Hamlib is now enabled by default, see the INSTALL file for details.
+  * When polling is used with Hamlib, times as low as 50 milliseconds are
+    allowed for rigs that have high baud rates.
+  * Ctrl+Up and Ctrl+Down will move the rig's frequency by 50 Hz.
+  * Xlog now uses a GtkListStore for the logs instead of a GtkTreeStore.
+  * The preferences dialog has been somewhat reorganised.
+
+- Changes for xlog version 1.3.1 - 2006/01/22
+  * Update spanish translation by Jaime, EA4TV.
+  * Updated french translation by Jean-Luc, F5IBH.
+  * Czech translation by Jan Straka, OK2JTB.
+  * Fix building when hamlib not present. Thanks Matt, GW0VNR.
+
+- Changes for xlog version 1.3 - 2005/12/13
+  * Responsiveness for opening large logs has been somewhat improved.
+  * A copy of xlog is used for saving so the gui does not get blocked.
+  * ADIF: when importing a file which uses strings like 160m, 80m, 40m, etc.
+    in the 'BAND' field it is converted to frequency.
+  * ADIF: when the 'NOTES' field is present it is appended to the xlog remarks
+    field.
+  * The remarks entry is now a multiline text entry which can contain up to 512
+    characters. This also fixes ADIF import from files with long comment/note
+    fields (e.g. dx4win). Thanks to Alan D. Snyder, KF3B, for reporting.
+  * A separate dialog and menu entry has been added for log importing. This
+    also means that the dialog for log opening has been somewhat redesigned,
+    it will now only show logs of type xlog.
+  * We now have a separate dialog for log exporting. This will handle ADIF,
+    cabrillo, EDI and TSV files. The saveas dialog must be used for saving logs
+    of type xlog under a different name.
+  * Shortcuts have been re-organised. Ctrl-i: log import, ctrl-e: log export,
+    ctrl-shift-s: saveas, ctrl-b: dialogs, ctrl-g: preferences.
+  * HAMLIB: configuration has changed. You need to click the "Select a radio"
+    button in the preferences dialog. This will show a dialog with rigid, model
+    and make. The rigid number is now saved in the preferences instead of the
+    model name, so hamlib needs to be re-configured with this release.
+  * You can now keep on using xlog while using the search dialog if "Keep this
+    dialog open" is checked.
+  * Naming of the log when merging has been fixed.
+  * The locator frame (only visible when you use the locator field in the log)
+    has been moved above the DXCC frame, because locator distance and bearing
+    calaculations are more accurate.
+  * When exporting to TSV you can now decide to add bearing and distance columns
+    if the locator field is used. This must be set in the export page of the
+    dialogs dialog. Suggested by Richard Bown, G8JVM.
+  * A new argument for the configure script has been added. If you want to
+    update the KDE/Gnome mime database during install use ./configure
+    --enable-mime-update. This is recommended for people who install from
+    source into /usr or /usr/local.
+  * Xlog now correctly updates the band/modes optionmenu when using Ctrl-k with
+    hamlib. Thanks to Ian Maude, G0VGS for reporting.
+  * For the sake of speed, colorization of the log and themeing of the program
+    has been removed. Instead, bold fonts are now used. You can now also change
+    the default font of the log.
+  * 'Delete' and 'Insert' keys no longer work for deleting or adding QSO's
+    because they would prevent correct use of these keys in text entry widgets.
+  * xlog.dat is no longer used. Future versions of xlog will probably contain
+    an editor for cty.dat.
+
+- Changes for xlog version 1.2.1 and 1.2.2 - 2005/04/10
+  * Debian: correct the Build-Depends line.
+  * This is a bugfix release, which fixes compilation against version 2.4
+    of the GTK+ libraries. There is no need to upgrade if you use version
+    2.6 of this library.
+
+- Changes for xlog version 1.2 - 2005/04/05
+  * Import support for the OH1AA logbook. Tested by Jarmo, OH1MRR.
+  * A keyerwindow has been added, opened from the 'Tools -> Keyer' menu. This
+    is a simple interface to cwdaemon and will allow you to run a contest.
+    It features programmable function keys, macro's, switch between CQ and
+    S&P mode, an auto increment counter and short numbers. See the MANUAL for
+    a description.
+  * Ctrl-H opens help, Ctrl-R the keyerwindow.
+  * The list of hamlib-rigs in the preferences dialog is now sorted. Thanks
+    to Jean-Luc F5IBH for proposing.
+  * You can use the 'del' key to delete a selected QSO and the 'insert' key
+    to add a QSO.
+  * We now have slightly different icons for the worked before dialog and
+    the keyer window.
+  * A safe backup method has been added, you can now select a backup directory
+    in the 'Logs' page of the preferences dialog. This directory can be on
+    another drive or on a network mounted directory. Proposed by Matt, GW0VNR.
+  * When using hamlib, only the needed backend is loaded at startup. This
+    saves about 2 Mb of memory compared to the old method, which would load
+    all backends.
+  * When using hamlib it is now possible to use the FCC emission designators
+    for modes. Check the option in the hamlib page of the preferences dialog.
+    Another proposal by Matt, GW0VNR.
+  * When selecting 'Logs -> Merge' or Ctrl-M you are presented with a dialog
+    which can be used to merge 2 logs.
+  * The manual has been rewritten so it can contain images.
+  * To make xlog more HIG compliant, Ctrl-Q will now quit the program and
+    Ctrl-W will close a log.
+  * Fixed a crash when locale conversion fails when reading the manual. Thanks
+    to Boguslaw, SQ5TB for reporting.
+  * Many minor bugfixes.
+  * Slovak translations by Michal Karas, OM4AA.
+  * French MANUAL and FAQ by Jean-Luc Coulon, F5IBH.
+
+- Changes for xlog version 1.1 - 2005/02/15
+  * Several cleanups in the function which creates the main window, the toolbar
+    now uses the GtkAction API, toolbar items are now also accessable through
+    the edit menu and the vertical handlebar can move freely to the left.
+  * "Tab" in the menu has been renamed to "Page".
+  * You can hide the number column by using the log-editor and entering a zero
+    column width for this column.
+  * The BUGS file has been added to the help menu, with a description on how to
+    report bugs.
+  * The logeditor has been redesigned so it fits on a 800x600 display.
+  * Most of the dialogs have been cleaned up and partly rewritten, so they
+    will load faster.
+  * Xlog now correctly recognizes the 60 meters band. Thanks to Harv Nelson,
+    AI9NL for notifying.
+  * At ADIF import, frequencies with a comma are converted to a dot.
+  * A gtk+ version check has been added, which will display an error at
+    startup if the version is below 2.4.
+  * An error will be displayed when trying to load a non-xlog file.
+  * The labels export format has been renamed TSV (Tab Separated Value).
+  * You can decide which fields to export in the TSV format (used by glabels),
+    by going to Settings->Dialogs and checking wanted the fields in the
+    "Save As" page.
+  * When hamlib is enabled, rounding of the digits is now also possible when
+    the s-meter is not visible.
+  * When entering a logname in the new log dialog, dash (-) and underscore (_)
+    are now also allowed.
+  * Polish MANUAL and FAQ added by Boguslaw Ciastek, SQ5TB.
+  * The position of the paned window is now remembered at program exit.
+
+-- Joop Stakenborg <pg4i@amsat.org>

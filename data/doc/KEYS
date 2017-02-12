@@ -1,0 +1,78 @@
+#
+# List of keys used in xlog, lines starting with '#' are ignored...
+#
+Control b: Open the Dialogs dialog.
+Control d: Delete a selected QSO.
+Control e: Log export dialog.
+Control f: Find a QSO in the log.
+Control g: Activate the preferences dialog.
+Control h: Open the manual.
+Control i: Log import dialog.
+Control j: Activate the scoring window.
+Control k: Click on all buttons present and fill in all defaults.
+Control l: Activate the defaults dialog
+Control m: Merge logs.
+Control n: Create a new log.
+Control o: Open a log.
+Control p: Print a log.
+Control q: Exit program.
+Control r: Activate the keyer.
+Control s: Save the log.
+Control t: Show/Hide the toolbar.
+Control u: Update a selected QSO.
+Control w: Write a qso to the log.
+Control y: Clear the QSO frame.
+Control z: Show a list of keys used by xlog.
+Control 1: Show DXCC totals.
+Control 2: Show WAC totals.
+Control 3: Show WAS totals.
+Control 4: Show WAZ totals.
+Control 5: Show IOTA totals.
+Control 6: Show Locator totals.
+Control 7: Show Locator map.
+Control+space: Add a QSO and Click all buttons (Control w and Control k).
+
+Control+Up Arrow: Move rig frequency 50 Hz up.
+Control+Down Arrow: Move rig frequency 50 Hz down.
+
+Control+Shift b: Open/close the worked before window.
+Control+Shift c: Dupe check.
+Control+Shift d: Show contry list.
+Control+Shift e: Log editor.
+Control+Shift f: Find unknown countries.
+Control+Shift i: Info dialog.
+Control+Shift o: Sort log by date.
+Control+Shift p: Page Setup dialog.
+Control+Shift s: Save As.
+Control+Shift t: Show hamlib information.
+Control+Shift w: Close a log.
+
+Control F10: Access the menu.
+
+PgUp: Scroll the log up.
+PgDn: Scroll the log down.
+Home: Go to the beginning of the log.
+End: Go to the end of the log.
+Up Arrow: Select previous QSO.
+Down Arrow: Select next QSO.
+
+Alt 1, Alt 2, etc: Switch between logs.
+
+Alt-a: Select Awards entry.
+Alt-c: Select Call entry.
+Alt-d: Select Date entry.
+Alt-e: Select utc-End entry.
+Alt-h: Select qtH entry.
+Alt-k: Select remarKs entry.
+Alt-l: Select Locator entry.
+Alt-m: Select Mhz entry
+Alt-n: Select Name entry.
+Alt-o: Select mOde entry
+Alt-p: Select Power entry.
+Alt-q: Select Qsl out box.
+Alt-r: Select Rx-rst entry.
+Alt-s: Select qSl in box.
+Alt-t: Select Tx-rst entry.
+Alt-u: Select Utc entry.
+
+Alt-?: Lookup Callsign

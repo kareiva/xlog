@@ -1,0 +1,81 @@
+Xlog handles 3 schemes of sharing information between applications.
+
+1) You can send information from xlog to an application by using shared
+	memory. When a callsign is entered into the callsign field of the QSO
+	frame, this callsign will be placed into shared memory, so a second
+	application can grab it.
+
+	Twpsk, written by Ted Williams (WA0EIR) uses this scheme. The callsign
+	will show up in twpsk's send widget (where you type your text) when
+	hitting Shift+Alt+h. Shift+Alt+o will show 'hiscall de mycall'.
+
+	See fromxlog.c in the remote directory for an example. You need a
+	unique key when setting up shared memory.
+
+2) Information can be send from a second application to xlog using message queues.
+
+	Remote logging is implemented by using message queues. Message queues
+	are set up with a call to msgget and using the number 1238 as a key.
+	You have to set up a struct for the message queue first. The mtype
+	variable of this struct should be set to 88. Total message length
+	should not exceed 1024 characters.
+
+	Some examples for messages:
+	"program:gmfsk\1version:1\1date:29 Jul 2001\1time:2214\1call:oh2bns"
+	"program:twpsk\1version:1\1call:pa4tu"
+
+	Messages send to xlog should consist of fields, separated by the '\1' 
+	character. Fields are started with a descriptor, followed by a
+	colon (':'). Possible fields are:
+
+	**********************************************************************
+	program:<name of program which sends the QSO information>
+	version:<version string for the message queue, must be '1' for now>
+	date:<date of QSO, preferable 'dd mmm yyyy'>
+	time:<start time of QSO, preferably in GMT>
+	endtime:<end time of QSO, preferably GMT (mandatory in some countries)>
+	call:<callsign of your contact (will be converted to uppercase)>
+	mhz:<frequency in MHz>
+	mode:<any one of CW,SSB,RTTY,PSK31,etc (will be converted to uppercase)>
+	tx:<report (RST) which you have send>
+	rx:<report (RST) which you have received>
+	name:<name of the operator you have contacted>
+	qth:<town of the operator you have contacted>
+	notes:<additional notes>
+	power:<power you have used (mandatory in some countries)>
+	locator:<QRA locator, as used in VHF QSO's>
+	free1:<information to put in freefield1>
+	free2:<information to put in freefield2>
+ 	************************************************************************
+
+	Allowed field widths for the log:
+
+	date:15  time:8   endtime:8  call:15    mhz:15     mode:8    tx:15
+	rx:15 	 name:30  qth:30     power:8    locator:8  free1:30  free2:30
+	notes:80
+  
+	The mhz, mode, tx and power fields may contain the HAMLIB token, e.g:
+	'mhz:HAMLIB'. This token will let xlog retrieve information from the rig
+	and use it for logging.
+
+	If the endtime, name, qth, power, locator, free1 and free2 fields are 
+	not in the log,	they will be put in the remarks field (make sure it is
+	present), separated by a comma.
+
+	The version string is needed to distinguish between possible future
+	changes in the message format. Xlog will display in it's statusbar when
+	a remote entry is received, along with the name of the program if it is
+	known.
+
+	If you leave out date and time, xlog will add them to the log for you,
+	this is demonstrated in demo 3 of sendtoxlog.c. If you leave out band
+	and mode, xlog will add them for you if the optionmenu is used, or if
+	a value is present in the editbox. This is demonstrated in demo 1 and 3.
+
+	You should not remove the message queue, with a call to 
+	msgctl(msgid, IPC_RMID, 0), xlog will take care of this.
+
+3) Information can be send from a second application to xlog using sockets.
+
+	Xlog listens on port 7311 for incoming messages. Format of these messages
+	is the same as above. See client.c for example code.

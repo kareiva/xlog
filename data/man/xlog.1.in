@@ -1,0 +1,15 @@
+.\" 
+.TH "XLOG" "1" "version @VERSION@" "Andy Stewart" "Hamradio"
+
+.SH "NAME"
+xlog \- GTK+ logging program for Amateur Radio Operators
+
+.SH "DESCRIPTION"
+\fBxlog\fR
+is a logging program for Amateur Radio Operators. The main
+window consists of a button bar, QSO frame, and
+a browseable log. Logs will be saved to a flat text file.
+You can create, open and close logs as you need them.
+
+.SH "SEE ALSO"
+Select Help->Documentation->Manual from the menu once xlog is started.

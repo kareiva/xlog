@@ -1,0 +1,51 @@
+Basic installation instructions for xlog
+========================================
+
+  1. The Hamradio Control Libraries will allow you to read the frequency of
+     your rig over the serial port. You will need to have both headers and
+     development libraries installed in order to compile xlog. You can not
+     compile xlog without hamlib support.
+
+  2. You also need a package called pkg-config in order for the configure
+     script to work.
+
+  3. pkg-config will look for a file called hamlib.pc. If this file is not
+     installed in /usr/lib/pkgconfig, you should tell pkg-config where it is
+     by modifying the environment variable PKG_CONFIG_PATH before calling
+     configure, e.g:
+     PKG_CONFIG_PATH="/usr/lib/pkgconfig:/usr/local/lib/pkgconfig".
+
+  4. If you want to update the KDE/Gnome mime database while installing, use 
+     ./configure --enable-mime-update. This is recommended if you install xlog
+     to /usr or /usr/local.
+     
+     A note for Linux and *BSD package maintainers: do not use
+     --enable-mime-update, instead call update-mime-database and
+     update-desktop-database in your installation script at install time.
+
+  5. Xlog needs the gtk+2.0 development libraries to compile. On most 
+     distributions the will be called libgtk2.0-dev or -devel. 
+     Please use version 2.18.0 or higher.  
+
+This all means you need a fairly recent distribution to compile xlog.
+Mandriva 2008, Slackware 12.0, Redhat Fedora Core 8 or Ubuntu 7.10 will all
+meet these requirements. Xlog was developed on Debian Unstable.
+
+  6. Type `./configure'.
+
+In case the configure script can not find libintl.h or the intl libraries.
+try: ./configure CFLAGS=-I/usr/local/include LDFLAGS="-L/usr/local/lib". This
+can happen in *BSD systems where libintl is installed into the /usr/local
+path and is not included into the C library.
+
+  7. Type `make' to compile the package.
+
+  8. Type `make install' to install the programs and data files. 
+
+  9.  When you want to strip the binary when installing, just type:
+     `make install-strip'.
+
+By default, `make install' will install the package's files in 
+`/usr/local/bin', `/usr/local/man/man1', `/usr/local/share/xlog', etc.  
+You can specify an installation prefix other than `/usr/local' by giving 
+`configure' the option `--prefix=PATH'.
